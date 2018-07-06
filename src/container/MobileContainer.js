@@ -15,7 +15,7 @@ import {
   Sidebar,
   Visibility,
 } from 'semantic-ui-react';
-import Home from '../components/Home';
+import HomeHeader from '../components/Header';
 
 export default class MobileContainer extends Component {
     state = {}
@@ -72,9 +72,8 @@ export default class MobileContainer extends Component {
                     </Menu.Item>
                   </Menu>
                 </Container>
-                <Home mobile />
+                <HomeHeader mobile />
               </Segment>
-  
               {children}
             </Sidebar.Pusher>
           </Sidebar.Pushable>
