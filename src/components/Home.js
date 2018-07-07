@@ -13,24 +13,22 @@ import {
   Segment,
   Sidebar,
   Visibility,
+  GridRow,
 } from 'semantic-ui-react';
 import ResponsiveContainer from '../container/ResponsiveContainer';
+import MenuIcons from './MenuIcons';
 
 const Home = () => (
   <ResponsiveContainer>
     <Segment style={{ padding: '8em 0em' }} vertical>
+      <MenuIcons></MenuIcons>
+    </Segment>
+    <Segment style={{ padding: '8em 0em' }} vertical>
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={8}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              We Help Companies and Companions
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>
-              We can give your company superpowers to do things that they never thought possible.
-              Let us delight your customers and empower your needs... through pure data analytics.
-            </p>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              We Make Bananas That Can Dance
+            <Header as='h1' style={{ fontSize: '2em' }}>
+              News
             </Header>
             <p style={{ fontSize: '1.33em' }}>
               Yes that's right, you thought it was the stuff of dreams, but even bananas can be

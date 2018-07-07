@@ -18,10 +18,19 @@ import {
 import HomeHeader from '../components/Header';
 
 export default class DesktopContainer extends Component {
-    state = {}
+    state = {
+      fixed: false,
+      menuActived: ''
+    }
   
     hideFixedMenu = () => this.setState({ fixed: false })
     showFixedMenu = () => this.setState({ fixed: true })
+
+    menuClickedHandler = (e, { name }) => {
+      this.setState({
+        menuActived: name
+      });
+    }
   
     render() {
       const { children } = this.props
@@ -35,39 +44,51 @@ export default class DesktopContainer extends Component {
             onBottomPassedReverse={this.hideFixedMenu}
           >
             <Segment
-              inverted
+              
               textAlign='center'
               style={{ minHeight: 700, padding: '1em 0em' }}
               vertical
             >
               <Menu
                 fixed={fixed ? 'top' : null}
-                inverted={!fixed}
                 pointing={!fixed}
                 secondary={!fixed}
                 size='large'
               >
                 <Container>
-                  <Menu.Item as='a' active>
-                    Home
+                  <Menu.Item name='title' active={ false } position='left'>
+                    กองทรัพยาการบุคคล
                   </Menu.Item>
-                  <Menu.Item as='a'>Work</Menu.Item>
-                  <Menu.Item as='a'>Company</Menu.Item>
-                  <Menu.Item as='a'>Careers</Menu.Item>
-                  <Menu.Item position='right'>
-                    <Button as='a' inverted={!fixed}>
-                      Log in
-                    </Button>
-                    <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
-                      Sign Up
-                    </Button>
+                  <Menu.Item 
+                    name='aboutUs' 
+                    active={ this.state.menuActived === 'aboutUs' } 
+                    onClick={ this.menuClickedHandler }
+                    position='right'>
+                    เกี่ยวกับเรา
+                  </Menu.Item>
+                  <Menu.Item 
+                    name='empStructure' 
+                    active={ this.state.menuActived === 'empStructure' } 
+                    onClick={ this.menuClickedHandler }>
+                    สารสนเทศบุคคลากร
+                  </Menu.Item>
+                  <Menu.Item 
+                    name='empShouldKnow' 
+                    active={ this.state.menuActived === 'empShouldKnow' } 
+                    onClick={ this.menuClickedHandler }>
+                    พนักงานควรรู้
+                  </Menu.Item>
+                  <Menu.Item 
+                    name='contactUs' 
+                    active={ this.state.menuActived === 'contactUs' } 
+                    onClick={ this.menuClickedHandler }>
+                    ติดต่อเรา
                   </Menu.Item>
                 </Container>
               </Menu>
               <HomeHeader />
             </Segment>
           </Visibility>
-  
           {children}
         </Responsive>
       )

@@ -21,7 +21,6 @@ const header = ({ mobile }) => (
       <Header
         as='h1'
         content='Imagine-a-Company'
-        inverted
         style={{
           fontSize: mobile ? '2em' : '4em',
           fontWeight: 'normal',
@@ -32,7 +31,6 @@ const header = ({ mobile }) => (
       <Header
         as='h2'
         content='Do whatever you want when you want to.'
-        inverted
         style={{
           fontSize: mobile ? '1.5em' : '1.7em',
           fontWeight: 'normal',
