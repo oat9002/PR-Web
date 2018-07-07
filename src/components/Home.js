@@ -17,6 +17,7 @@ import {
 } from 'semantic-ui-react';
 import ResponsiveContainer from '../container/ResponsiveContainer';
 import MenuIcons from './MenuIcons';
+import NewsGroup from './NewsGroup';
 
 const Home = () => (
   <ResponsiveContainer>
@@ -30,19 +31,10 @@ const Home = () => (
             <Header as='h1' style={{ fontSize: '2em' }}>
               News
             </Header>
-            <p style={{ fontSize: '1.33em' }}>
-              Yes that's right, you thought it was the stuff of dreams, but even bananas can be
-              bioengineered.
-            </p>
-          </Grid.Column>
-          <Grid.Column floated='right' width={6}>
-            <Image bordered rounded size='large' src='/images/wireframe/white-image.png' />
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row>
-          <Grid.Column textAlign='center'>
-            <Button size='huge'>Check Them Out</Button>
-          </Grid.Column>
+        <Grid.Row columns={ 3 } divided>
+          <NewsGroup></NewsGroup>
         </Grid.Row>
       </Grid>
     </Segment>
