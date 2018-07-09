@@ -16,7 +16,7 @@ const menuIcons = (props) => {
 
     return (
         <Grid container stackable verticalAlign='middle' >
-            <Grid.Row>
+            <Grid.Row centered>
                 { menuColumns }
             </Grid.Row>
         </Grid>
