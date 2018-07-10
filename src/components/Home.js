@@ -69,21 +69,23 @@ const Home = () => (
         <Grid divided inverted stackable>
           <Grid.Row>
             <Grid.Column width={3}>
-              <Header inverted as='h4' content='About' />
+              <Header inverted as='h4' content='Hunan Resource Division' />
               <List link inverted>
-                <List.Item as='a'>Sitemap</List.Item>
-                <List.Item as='a'>Contact Us</List.Item>
-                <List.Item as='a'>Religious Ceremonies</List.Item>
-                <List.Item as='a'>Gazebo Plans</List.Item>
+                <List.Item as='a'>กองทรัยากรบุคคล</List.Item>
+                <List.Item as='a'>สำนังานอริการบดี สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</List.Item>
+                <List.Item as='a'>เลขที่ 1 ถนนฉลองกรุง แขวงลาดกระบัง เขตลาดกระบัง กทม 10520</List.Item>
+                <List.Item as='a'>Tel: 66(0)........</List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={3}>
               <Header inverted as='h4' content='Services' />
               <List link inverted>
-                <List.Item as='a'>Banana Pre-Order</List.Item>
-                <List.Item as='a'>DNA FAQ</List.Item>
-                <List.Item as='a'>How To Access</List.Item>
-                <List.Item as='a'>Favorite X-Men</List.Item>
+                <List.Item as='a'>สมัครงาน</List.Item>
+                <List.Item as='a'>พนักงานควรรู้</List.Item>
+                <List.Item as='a'>สวัสดิการ</List.Item>
+                <List.Item as='a'>พัฒนาบุคลากร</List.Item>
+                <List.Item as='a'>ความก้าวหน้า</List.Item>
+                <List.Item as='a'>ประเมินผลการปฏิบัตงาน</List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={7}>
