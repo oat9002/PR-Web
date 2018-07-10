@@ -13,8 +13,7 @@ const menuIcons = (props) => {
     const width = Math.floor(16 / numOfIcons)
       return (
         <Grid container stackable verticalAlign='middle' >
-
-            <Grid.Row>
+            <Grid.Row centered>
                 <Grid.Column width={ width }>
                     <Image src={ register } />
                 </Grid.Column>
@@ -33,10 +32,6 @@ const menuIcons = (props) => {
                 <Grid.Column width={ width }>
                     <Image src={ growth } />
                 </Grid.Column>
-=======
-            <Grid.Row centered>
-                { menuColumns }
->>>>>>> 58364fb66ff92381d33185c053e375f03dc56e90
             </Grid.Row>
         </Grid>
     );
