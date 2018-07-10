@@ -19,6 +19,8 @@ import ResponsiveContainer from '../container/ResponsiveContainer';
 import MenuIcons from './MenuIcons';
 import NewsItems from './NewsItems';
 import NewsCard from './NewsCards';
+import Galleries from './Galleries';
+import Systems from './Systems';
 
 const Home = () => (
   <ResponsiveContainer>
@@ -35,11 +37,7 @@ const Home = () => (
           </Grid.Column>
         </Grid.Row>
         <NewsCard></NewsCard>
-        <Grid.Row centered>
-          <Grid.Column width={ 10 }>
-            <NewsItems></NewsItems>
-          </Grid.Column>
-        </Grid.Row>
+        <NewsItems></NewsItems>
       </Grid>
     </Segment>
     <Segment style={{ padding: '8em 0em' }} vertical>
@@ -51,6 +49,7 @@ const Home = () => (
             </Header>
           </Grid.Column>
         </Grid.Row>
+        <Galleries></Galleries>
       </Grid>
     </Segment>
     <Segment style={{ padding: '8em 0em' }} vertical>
@@ -62,6 +61,7 @@ const Home = () => (
             </Header>
           </Grid.Column>
         </Grid.Row>
+        <Systems></Systems>
       </Grid>
     </Segment>
     <Segment inverted vertical style={{ padding: '5em 0em' }}>

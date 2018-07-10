@@ -14,9 +14,13 @@ const newsGroup = (props) => {
     });
 
     return (
-        <Item.Group>
-            { genearateNews }
-        </Item.Group>
+        <Grid.Row centered>
+          <Grid.Column width={ 10 }>
+            <Item.Group>
+                { genearateNews }
+            </Item.Group>
+          </Grid.Column>
+        </Grid.Row>
     );
 };
 
