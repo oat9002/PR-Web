@@ -5,7 +5,7 @@ import img from '../assets/pics/images.png';
 import _ from 'lodash';
 
 const galleries = (props) => {
-    const description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer ";
+    const description = "Lorem Ipsum is simply dummy text of t";
 
     const generateGalleries = _.times(4, (idx) => {
         return (
@@ -16,7 +16,7 @@ const galleries = (props) => {
     });
 
     return (
-        <Grid.Row columns={ 4 } centered>
+        <Grid.Row columns={ 5 } centered>
             { generateGalleries }
         </Grid.Row>    
     )

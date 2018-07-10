@@ -3,7 +3,7 @@ import { Image } from 'semantic-ui-react';
 
 const system = (props) => {
     return (
-        <Image size='medium' src={ props.imgSrc }></Image>
+        <Image src={ props.imgSrc }></Image>
     );
 }
 

@@ -5,7 +5,7 @@ import img from '../assets/pics/images.png';
 import _ from 'lodash';
 
 const newsCards = (props) => {
-    const description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer ";
+    const description = "Lorem Ipsum is simply dummy text of the printing and type dummy text ever since the 1500s, when an unknown printer ";
 
     const genearateNews = _.times(3, (idx) => {
         return (
@@ -16,10 +16,10 @@ const newsCards = (props) => {
     });
 
     return (
-        <Grid.Row columns={ 4 } centered>
+        <Grid.Row columns={ 5 } centered>
             { genearateNews }
         </Grid.Row>    
     )
 }
 
-export default newsCards;
+export default newsCards
