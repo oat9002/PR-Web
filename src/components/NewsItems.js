@@ -9,7 +9,7 @@ const newsGroup = (props) => {
 
     const genearateNews = _.times(5, (idx) => {
         return (
-            <News key={ idx } date={ 5 + idx } month={ 7 } year={ 2018 } imgSrc={ img } title='Title' description={ description }/>
+            <News card={ false } key={ idx } date={ 5 + idx } month={ 7 } year={ 2018 } imgSrc={ img } title='Title' description={ description }/>
         );
     });
 

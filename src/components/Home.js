@@ -18,6 +18,7 @@ import {
 import ResponsiveContainer from '../container/ResponsiveContainer';
 import MenuIcons from './MenuIcons';
 import NewsItems from './NewsItems';
+import NewsCard from './NewsCards';
 
 const Home = () => (
   <ResponsiveContainer>
@@ -27,17 +28,15 @@ const Home = () => (
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
-          <Grid.Column width={8}>
+          <Grid.Column width={ 8 }>
             <Header as='h1' style={{ fontSize: '2em' }}>
               News
             </Header>
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row>
-
-        </Grid.Row>
+        <NewsCard></NewsCard>
         <Grid.Row centered>
-          <Grid.Column width={10}>
+          <Grid.Column width={ 10 }>
             <NewsItems></NewsItems>
           </Grid.Column>
         </Grid.Row>
