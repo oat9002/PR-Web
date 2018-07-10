@@ -17,7 +17,7 @@ import {
 } from 'semantic-ui-react';
 import ResponsiveContainer from '../container/ResponsiveContainer';
 import MenuIcons from './MenuIcons';
-import NewsGroup from './NewsGroup';
+import NewsItems from './NewsItems';
 
 const Home = () => (
   <ResponsiveContainer>
@@ -33,8 +33,13 @@ const Home = () => (
             </Header>
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row columns='equal' divided>
-          <NewsGroup></NewsGroup>
+        <Grid.Row>
+
+        </Grid.Row>
+        <Grid.Row centered>
+          <Grid.Column width={10}>
+            <NewsItems></NewsItems>
+          </Grid.Column>
         </Grid.Row>
       </Grid>
     </Segment>

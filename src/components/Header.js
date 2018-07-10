@@ -22,8 +22,8 @@ const header = ({ mobile }) => (
     <Container>
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
-          <Grid.Column width={ 16 }>
-            <Image src={ img } size='massive' ></Image>
+          <Grid.Column>
+            <Image src={ img } ></Image>
           </Grid.Column>
         </Grid.Row>
       </Grid>
