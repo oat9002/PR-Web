@@ -56,7 +56,7 @@ export default class DesktopContainer extends Component {
               >
                 <Container>
                   <Menu.Item name='title' active={ false } position='left'
-                  style={{'color': 'blue'}}>
+                  style={{'color': '#04004d'}}>
                     ฝ่ายทรัยากรบุคคล คณะการบริหารและจัดการ
                   </Menu.Item>
                   <Menu.Item 
