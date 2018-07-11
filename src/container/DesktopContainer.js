@@ -20,17 +20,31 @@ import HomeHeader from '../components/Header';
 export default class DesktopContainer extends Component {
     state = {
       fixed: false,
-      menuActived: ''
+      menuActived: '',
+      visible: true
     }
   
     hideFixedMenu = () => this.setState({ fixed: false })
     showFixedMenu = () => this.setState({ fixed: true })
+
+    visibleHandler = () => {
+      setInterval(() => {
+        this.setState({
+          visible: !this.state.visible
+        })
+      }, 3000)
+    }
 
     menuClickedHandler = (e, { name }) => {
       this.setState({
         menuActived: name
       });
     }
+
+    componentDidMount = () => {
+      this.visibleHandler();
+    }
+    
   
     render() {
       const { children } = this.props
@@ -86,7 +100,7 @@ export default class DesktopContainer extends Component {
                   </Menu.Item>
                 </Container>
               </Menu>
-              <HomeHeader />
+              <HomeHeader visible={this.state.visible} />
             </Segment>
           </Visibility>
           {children}

@@ -14,16 +14,21 @@ import {
     Sidebar,
     Visibility,
     GridRow,
+    Transition
   } from 'semantic-ui-react'; 
 import PropTypes from 'prop-types';
 import img from '../assets/pics/logo.jpg';
+import img2 from '../assets/pics/Logo2.jpg';
 
-const header = ({ mobile }) => (
+const header = (props) => (
     <Container>
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column>
-            <Image src={ img } ></Image>
+            <Transition.Group visible={props.visible} duration={ 0 }>
+              { props.visible && <Image src={ img } ></Image> }
+              { !props.visible && <Image src={ img2 } ></Image> }
+            </Transition.Group>
           </Grid.Column>
         </Grid.Row>
       </Grid>
