@@ -24,10 +24,10 @@ import Systems from './Systems';
 
 const Home = () => (
   <ResponsiveContainer>
-    <Segment style={{ padding: '8em 0em' }} vertical>
+    <Segment style={{ padding: '3em 0em' }} vertical>
       <MenuIcons></MenuIcons>
     </Segment>
-    <Segment style={{ padding: '8em 0em' }} vertical>
+    <Segment style={{ padding: '4em 0em' }} vertical>
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={ 8 }>
@@ -40,7 +40,7 @@ const Home = () => (
         <NewsItems></NewsItems>
       </Grid>
     </Segment>
-    <Segment style={{ padding: '8em 0em' }} vertical>
+    <Segment style={{ padding: '4em 0em' }} vertical>
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={8}>
@@ -52,7 +52,7 @@ const Home = () => (
         <Galleries></Galleries>
       </Grid>
     </Segment>
-    <Segment style={{ padding: '8em 0em' }} vertical>
+    <Segment style={{ padding: '4em 0em' }} vertical>
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={8}>
