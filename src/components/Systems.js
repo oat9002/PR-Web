@@ -14,7 +14,7 @@ const systems = (props) => {
     });
 
     return (
-        <Grid.Row columns={ 4 } centered>
+        <Grid.Row columns={ 5 } centered>
             { generateSystems }
         </Grid.Row>    
     )
