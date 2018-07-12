@@ -64,11 +64,11 @@ const Home = () => (
         <Systems></Systems>
       </Grid>
     </Segment>
-    <Segment inverted vertical style={{ padding: '5em 0em' }}>
+    <Segment inverted vertical style={{ padding: '5em 0em' }} >
       <Container>
         <Grid divided inverted stackable>
           <Grid.Row>
-            <Grid.Column width={3}>
+            <Grid.Column width={5}>
               <Header inverted as='h4' content='Hunan Resource Division' />
               <List link inverted>
                 <List.Item as='a'>คณะการบริหารและจัดการ </List.Item>
