@@ -73,12 +73,12 @@ const Home = () => (
             <Grid.Column width={5}>
               <Header inverted as='h4' content='Hunan Resource Division' />
               <List link inverted>
-                <List.Item as='a'>คณะการบริหารและจัดการ </List.Item>
-                <List.Item as='a'>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</List.Item>
-                <List.Item as='a'>เลขที่ 1 ซอยฉลองกรุง 1 แขวงลาดกระบัง เขตลาดกระบัง กรุงเทพมหานคร 1052</List.Item>
-                <List.Item as='a'>เบอร์โทรศัพท์ : 02-329-8459-60, 02-329800</List.Item>
-                <List.Item as='a'>โทรสาร : 02-329-8461</List.Item>
-                <List.Item as='a'>E-mail: amc.kmitl@hotmail.com</List.Item>
+                <List.Item>คณะการบริหารและจัดการ </List.Item>
+                <List.Item>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</List.Item>
+                <List.Item>เลขที่ 1 ซอยฉลองกรุง 1 แขวงลาดกระบัง เขตลาดกระบัง กรุงเทพมหานคร 1052</List.Item>
+                <List.Item>เบอร์โทรศัพท์ : 02-329-8459-60, 02-329800</List.Item>
+                <List.Item>โทรสาร : 02-329-8461</List.Item>
+                <List.Item>E-mail: amc.kmitl@hotmail.com</List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={5}>
