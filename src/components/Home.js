@@ -64,11 +64,9 @@ const Home = () => (
         <Systems></Systems>
       </Grid>
     </Segment>
-<<<<<<< HEAD
-    <Segment inverted vertical style={{ padding: '5em 0em' }} >
-=======
+
     <Segment vertical style={{ padding: '5em 0em', backgroundColor: '#00518b' }}>
->>>>>>> 279e5752e917285a3fab79eead82a05fc53f9043
+
       <Container>
         <Grid divided inverted stackable>
           <Grid.Row>
