@@ -64,7 +64,11 @@ const Home = () => (
         <Systems></Systems>
       </Grid>
     </Segment>
+<<<<<<< HEAD
     <Segment inverted vertical style={{ padding: '5em 0em' }} >
+=======
+    <Segment vertical style={{ padding: '5em 0em', backgroundColor: '#00518b' }}>
+>>>>>>> 279e5752e917285a3fab79eead82a05fc53f9043
       <Container>
         <Grid divided inverted stackable>
           <Grid.Row>
@@ -79,7 +83,7 @@ const Home = () => (
                 <List.Item as='a'>E-mail: amc.kmitl@hotmail.com</List.Item>
               </List>
             </Grid.Column>
-            <Grid.Column width={3}>
+            <Grid.Column width={5}>
               <Header inverted as='h4' content='Services' />
               <List link inverted>
                 <List.Item as='a'>สมัครงาน</List.Item>
@@ -89,14 +93,6 @@ const Home = () => (
                 <List.Item as='a'>ความก้าวหน้า</List.Item>
                 <List.Item as='a'>ประเมินผลการปฏิบัตงาน</List.Item>
               </List>
-            </Grid.Column>
-            <Grid.Column width={7}>
-              <Header as='h4' inverted>
-                Footer Header
-              </Header>
-              <p>
-                Extra space for a call to action inside the footer that could help re-engage users.
-              </p>
             </Grid.Column>
           </Grid.Row>
         </Grid>

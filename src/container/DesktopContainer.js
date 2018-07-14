@@ -58,6 +58,24 @@ export default class DesktopContainer extends Component {
             onBottomPassedReverse={this.hideFixedMenu}
           >
             <Segment
+             style={{ padding: '0em 0em', backgroundColor: '#00518b' }}
+             vertical
+            >
+               <Menu
+                secondary
+                size='large'
+              >
+                <Container>
+                  <Menu.Item name='title' active={ false } position='right' style={{ color:'#ffffff' }}>
+                   menu 1
+                  </Menu.Item>
+                  <Menu.Item name='title' active={ false } style={{ color:'#ffffff' }}>
+                   menu 2
+                  </Menu.Item>
+                </Container>
+              </Menu>
+            </Segment>
+            <Segment
               textAlign='center'
               style={{ minHeight: 400, padding: '1em 0em' }}
               vertical
@@ -70,7 +88,7 @@ export default class DesktopContainer extends Component {
               >
                 <Container>
                   <Menu.Item name='title' active={ false } position='left'
-                  style={{'color': '#04004d'}}>
+                  style={{color: '#04004d'}}>
                     ฝ่ายทรัยากรบุคคล คณะการบริหารและจัดการ
                   </Menu.Item>
                   <Menu.Item 
