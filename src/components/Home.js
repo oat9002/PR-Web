@@ -21,6 +21,8 @@ import NewsItems from './NewsItems';
 import NewsCard from './NewsCards';
 import Galleries from './Galleries';
 import Systems from './Systems';
+import Footer from './Footer';
+import FooterLogo from '../assets/pics/logo4.jpg';
 
 const Home = () => (
   <ResponsiveContainer>
@@ -64,35 +66,8 @@ const Home = () => (
         <Systems></Systems>
       </Grid>
     </Segment>
-    <Segment vertical style={{ padding: '5em 0em', backgroundColor: '#00518b' }}>
-      <Container>
-        <Grid divided inverted stackable>
-          <Grid.Row>
-            <Grid.Column width={5}>
-              <Header inverted as='h4' content='Hunan Resource Division' />
-              <List link inverted>
-                <List.Item as='a'>คณะการบริหารและจัดการ </List.Item>
-                <List.Item as='a'>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</List.Item>
-                <List.Item as='a'>เลขที่ 1 ซอยฉลองกรุง 1 แขวงลาดกระบัง เขตลาดกระบัง กรุงเทพมหานคร 1052</List.Item>
-                <List.Item as='a'>เบอร์โทรศัพท์ : 02-329-8459-60, 02-329800</List.Item>
-                <List.Item as='a'>โทรสาร : 02-329-8461</List.Item>
-                <List.Item as='a'>E-mail: amc.kmitl@hotmail.com</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={5}>
-              <Header inverted as='h4' content='Services' />
-              <List link inverted>
-                <List.Item as='a'>สมัครงาน</List.Item>
-                <List.Item as='a'>พนักงานควรรู้</List.Item>
-                <List.Item as='a'>สวัสดิการ</List.Item>
-                <List.Item as='a'>พัฒนาบุคลากร</List.Item>
-                <List.Item as='a'>ความก้าวหน้า</List.Item>
-                <List.Item as='a'>ประเมินผลการปฏิบัตงาน</List.Item>
-              </List>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </Container>
+    <Segment vertical style={{ padding: '5em 0em', backgroundImage: `url(${FooterLogo})`, backgroundRepeat: 'none-repeat', backgroundSize: 'cover' }}>
+      <Footer></Footer>
     </Segment>
   </ResponsiveContainer>
 )
