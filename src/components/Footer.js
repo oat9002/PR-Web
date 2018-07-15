@@ -20,12 +20,12 @@ const footer = () => (
             <Grid.Column width={5}>
               <Header inverted as='h4' content='Services' />
               <List link inverted>
-                <List.Item>สมัครงาน</List.Item>
-                <List.Item>พนักงานควรรู้</List.Item>
-                <List.Item>สวัสดิการ</List.Item>
-                <List.Item>พัฒนาบุคลากร</List.Item>
-                <List.Item>ความก้าวหน้า</List.Item>
-                <List.Item>ประเมินผลการปฏิบัตงาน</List.Item>
+                <List.Item as='a'>สมัครงาน</List.Item>
+                <List.Item as='a'>พนักงานควรรู้</List.Item>
+                <List.Item as='a'>สวัสดิการ</List.Item>
+                <List.Item as='a'>พัฒนาบุคลากร</List.Item>
+                <List.Item as='a'>ความก้าวหน้า</List.Item>
+                <List.Item as='a'>ประเมินผลการปฏิบัตงาน</List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={5}>

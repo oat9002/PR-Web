@@ -66,6 +66,7 @@ const Home = () => (
         <Systems></Systems>
       </Grid>
     </Segment>
+
     <Segment vertical style={{ padding: '5em 0em', backgroundColor: '#00518b' }}>
       <Footer></Footer>
     </Segment>
