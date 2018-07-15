@@ -3,11 +3,11 @@ import { Container, Grid, Header, List } from 'semantic-ui-react';
 
 const footer = () => (
     <Container>
-        <Grid divided inverted stackable>
+        <Grid divided stackable>
           <Grid.Row>
             <Grid.Column width={5}>
               <Header as='h4' content='Hunan Resource Division' />
-              <List link >
+              <List link>
                 <List.Item>คณะการบริหารและจัดการ </List.Item>
                 <List.Item>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</List.Item>
                 <List.Item>เลขที่ 1 ซอยฉลองกรุง 1 แขวงลาดกระบัง เขตลาดกระบัง กรุงเทพมหานคร 1052</List.Item>
