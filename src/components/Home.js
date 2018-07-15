@@ -66,8 +66,9 @@ const Home = () => (
         <Systems></Systems>
       </Grid>
     </Segment>
-
-    <Segment vertical style={{ padding: '5em 0em', backgroundColor: '#00518b' }}>
+    <Segment 
+      vertical 
+      style={{ padding: '5em 0em', backgroundImage: `url(${ FooterLogo })`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
       <Footer></Footer>
     </Segment>
   </ResponsiveContainer>
