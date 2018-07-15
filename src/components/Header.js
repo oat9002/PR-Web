@@ -34,7 +34,7 @@ class HomeHeader extends Component {
         <Grid container stackable verticalAlign='middle'>
           <Grid.Row>
             <Grid.Column>
-              <Carousel height={ this.props.mobile ? '300px' : '500px' } indicatorPosition="outside">
+              <Carousel height={ this.props.mobile ? '200px' : '500px' } indicatorPosition="outside">
                 <Carousel.Item>
                   <Image src={img}></Image>
                 </Carousel.Item>
