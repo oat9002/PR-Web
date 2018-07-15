@@ -22,7 +22,9 @@ import {
   
 import PropTypes from 'prop-types';
 import img from '../assets/pics/logo.jpg';
-import img2 from '../assets/pics/Logo2.jpg';
+import img2 from '../assets/pics/logo5.jpg';
+import img3 from '../assets/pics/logo6.jpg';
+import img4 from '../assets/pics/logo7.jpg';
 
 class HomeHeader extends Component {
 
@@ -32,12 +34,18 @@ class HomeHeader extends Component {
         <Grid container stackable verticalAlign='middle'>
           <Grid.Row>
             <Grid.Column>
-              <Carousel height={ this.props.mobile ? '200px' : '500px' } indicatorPosition="outside">
+              <Carousel height={ this.props.mobile ? '300px' : '500px' } indicatorPosition="outside">
                 <Carousel.Item>
                   <Image src={img}></Image>
                 </Carousel.Item>
                 <Carousel.Item>
                   <Image src={img2}></Image>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <Image src={img3}></Image>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <Image src={img4}></Image>
                 </Carousel.Item>
               </Carousel>
             </Grid.Column>
