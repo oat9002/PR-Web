@@ -1,40 +1,34 @@
 import React, { Component } from 'react'
 import {
-    Button,
     Container,
-    Divider,
     Grid,
-    Header,
-    Icon,
     Image,
-    List,
-    Menu,
-    Responsive,
-    Segment,
-    Sidebar,
-    Visibility,
-    GridRow,
-    Transition
   } from 'semantic-ui-react'; 
 import {
     Carousel
   } from 'element-react';
   
 import PropTypes from 'prop-types';
-import img from '../assets/pics/logo.jpg';
-import img2 from '../assets/pics/logo5.jpg';
-import img3 from '../assets/pics/logo6.jpg';
-import img4 from '../assets/pics/logo7.jpg';
+import img from '../assets/pics/header1.jpg';
+import img2 from '../assets/pics/header2.jpg';
+import img3 from '../assets/pics/header3.jpg';
+import img4 from '../assets/pics/header4.jpg';
 
 class HomeHeader extends Component {
-
   render() {
+    const mobileSize = `${ Math.ceil(window.innerHeight * 0.4) }px`;
+    const desktopSize = `${ Math.ceil(window.innerHeight * 0.8) }px`;
+
     return (
       <Container>
         <Grid container stackable verticalAlign='middle'>
-          <Grid.Row>
-            <Grid.Column>
-              <Carousel height={ this.props.mobile ? '200px' : '500px' } indicatorPosition="outside">
+          <Grid.Row centered>
+            <Grid.Column width={14}>
+              <Carousel 
+                height={ this.props.mobile ? mobileSize : desktopSize } 
+                indicatorPosition="outside"
+                trigger='click'
+              >
                 <Carousel.Item>
                   <Image src={img}></Image>
                 </Carousel.Item>
