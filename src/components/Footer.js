@@ -6,8 +6,8 @@ const footer = () => (
         <Grid divided inverted stackable>
           <Grid.Row>
             <Grid.Column width={5}>
-              <Header inverted as='h4' content='Hunan Resource Division' />
-              <List link inverted>
+              <Header as='h4' content='Hunan Resource Division' />
+              <List link >
                 <List.Item>คณะการบริหารและจัดการ </List.Item>
                 <List.Item>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</List.Item>
                 <List.Item>เลขที่ 1 ซอยฉลองกรุง 1 แขวงลาดกระบัง เขตลาดกระบัง กรุงเทพมหานคร 1052</List.Item>
@@ -17,8 +17,8 @@ const footer = () => (
               </List>
             </Grid.Column>
             <Grid.Column width={5}>
-              <Header inverted as='h4' content='Services' />
-              <List link inverted>
+              <Header as='h4' content='Services' />
+              <List link >
                 <List.Item as='a'>สมัครงาน</List.Item>
                 <List.Item as='a'>พนักงานควรรู้</List.Item>
                 <List.Item as='a'>สวัสดิการ</List.Item>
@@ -28,8 +28,8 @@ const footer = () => (
               </List>
             </Grid.Column>
             <Grid.Column width={5}>
-            <Header inverted as='h4' content='Go to' />
-              <List link inverted>
+            <Header  as='h4' content='Go to' />
+              <List link >
                 <List.Item>
                   <List.Icon name='internet explorer' />
                   <List.Content>
