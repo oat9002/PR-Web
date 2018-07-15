@@ -15,27 +15,27 @@ const menuIcons = (props) => {
         <Grid container stackable verticalAlign='middle' >
             <Grid.Row centered>
                 <Grid.Column width={ width } >
-                    <a href="//www.google.com"><Image size='small' src={ register } /></a>
+                   <Image as='a' href='//www.google.com' size='small' src={ register } />
                 </Grid.Column>
 
                 <Grid.Column width={ width }>
-                    <a href="//www.google.com"><Image size='small' src={ fyi } /></a>
+                   <Image as='a' href='//www.google.com' size='small' src={ fyi } />
                 </Grid.Column>
 
                 <Grid.Column width={ width }>
-                    <a href="//www.google.com"><Image size='small' src={ welfare } /></a>
+                    <Image as='a' href='//www.google.com' size='small' src={ welfare } />
                 </Grid.Column>
 
                 <Grid.Column width={ width }>
-                    <a href="//www.google.com"><Image size='small' src={ develop } /></a>
+                    <Image as='a' href='//www.google.com' size='small' src={ develop } />
                 </Grid.Column>
 
                 <Grid.Column width={ width }>
-                    <a href="//www.google.com"><Image size='small' src={ growth } /></a>
+                    <Image as='a' href='//www.google.com' size='small' src={ growth } />
                 </Grid.Column>
 
                 <Grid.Column width={ width }>
-                    <a href="//www.google.com"><Image size='small' src={ evaluation } /></a>
+                    <Image as='a' href='//www.google.com' size='small' src={ evaluation } />
                 </Grid.Column>
                 
             </Grid.Row>
