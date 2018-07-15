@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Grid, Header, List } from 'semantic-ui-react';
-import FacebookPage from './FacebookPage';
 
 const footer = () => (
     <Container>
@@ -29,7 +28,15 @@ const footer = () => (
               </List>
             </Grid.Column>
             <Grid.Column width={5}>
-              <FacebookPage></FacebookPage>
+            <Header inverted as='h4' content='Go to' />
+              <List link inverted>
+                <List.Item>
+                  <List.Icon name='internet explorer' />
+                  <List.Content>
+                    <a href='//www.fam.kmitl.ac.th/'>เว็บคณะการบริหารและจัดการ</a>
+                  </List.Content>
+                </List.Item>
+              </List>
             </Grid.Column>
           </Grid.Row>
         </Grid>
