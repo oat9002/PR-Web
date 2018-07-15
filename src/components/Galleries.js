@@ -9,7 +9,7 @@ const galleries = (props) => {
 
     const generateGalleries = _.times(4, (idx) => {
         return (
-            <Grid.Column>
+            <Grid.Column key = { idx }>
                 <Gallery key={ idx } date={ 5 + idx } month={ 7 } year={ 2018 } imgSrc={ img } title='Title' description={ description  }/>
             </Grid.Column>
         );

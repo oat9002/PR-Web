@@ -27,24 +27,11 @@ export default class DesktopContainer extends Component {
     hideFixedMenu = () => this.setState({ fixed: false })
     showFixedMenu = () => this.setState({ fixed: true })
 
-    visibleHandler = () => {
-      setInterval(() => {
-        this.setState({
-          visible: !this.state.visible
-        })
-      }, 3000)
-    }
-
     menuClickedHandler = (e, { name }) => {
       this.setState({
         menuActived: name
       });
     }
-
-    componentDidMount = () => {
-      this.visibleHandler();
-    }
-    
   
     render() {
       const { children } = this.props

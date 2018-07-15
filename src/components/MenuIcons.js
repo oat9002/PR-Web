@@ -15,27 +15,27 @@ const menuIcons = (props) => {
         <Grid container stackable verticalAlign='middle' >
             <Grid.Row centered>
                 <Grid.Column width={ width } >
-                    <Image src={ register } />
+                    <Image size='small' src={ register } />
                 </Grid.Column>
 
                 <Grid.Column width={ width }>
-                    <Image src={ fyi } />
+                    <Image size='small' src={ fyi } />
                 </Grid.Column>
 
                 <Grid.Column width={ width }>
-                    <Image src={ welfare } />
+                    <Image size='small' src={ welfare } />
                 </Grid.Column>
 
                 <Grid.Column width={ width }>
-                    <Image src={ develop } />
+                    <Image size='small' src={ develop } />
                 </Grid.Column>
 
                 <Grid.Column width={ width }>
-                    <Image src={ growth } />
+                    <Image size='small' src={ growth } />
                 </Grid.Column>
 
                 <Grid.Column width={ width }>
-                    <Image src={ evaluation } />
+                    <Image size='small' src={ evaluation } />
                 </Grid.Column>
                 
             </Grid.Row>

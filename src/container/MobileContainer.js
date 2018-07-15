@@ -27,6 +27,13 @@ export default class MobileContainer extends Component {
     }
   
     handleToggle = () => this.setState({ sidebarOpened: !this.state.sidebarOpened })
+
+    menuClickedHandler = (e, { name }) => {
+      this.setState({
+        menuActived: name
+      });
+    }
+  
   
     render() {
       const { children } = this.props
@@ -34,16 +41,33 @@ export default class MobileContainer extends Component {
   
       return (
         <Responsive {...Responsive.onlyMobile}>
-          <Sidebar.Pushable>
-            <Sidebar as={Menu} animation='uncover' inverted vertical visible={sidebarOpened}>
-              <Menu.Item as='a' active>
-                Home
+          <Sidebar.Pushable inverted>
+            <Sidebar as={Menu} animation='uncover' vertical visible={sidebarOpened}>
+              <Menu.Item 
+                name='aboutUs' 
+                active={ this.state.menuActived === 'aboutUs' } 
+                onClick={ this.menuClickedHandler }
+                position='right'>
+                เกี่ยวกับเรา
               </Menu.Item>
-              <Menu.Item as='a'>Work</Menu.Item>
-              <Menu.Item as='a'>Company</Menu.Item>
-              <Menu.Item as='a'>Careers</Menu.Item>
-              <Menu.Item as='a'>Log in</Menu.Item>
-              <Menu.Item as='a'>Sign Up</Menu.Item>
+              <Menu.Item 
+                name='empStructure' 
+                active={ this.state.menuActived === 'empStructure' } 
+                onClick={ this.menuClickedHandler }>
+                สารสนเทศบุคคลากร
+              </Menu.Item>
+              <Menu.Item 
+                name='empShouldKnow' 
+                active={ this.state.menuActived === 'empShouldKnow' } 
+                onClick={ this.menuClickedHandler }>
+                พนักงานควรรู้
+              </Menu.Item>
+              <Menu.Item 
+                name='contactUs' 
+                active={ this.state.menuActived === 'contactUs' } 
+                onClick={ this.menuClickedHandler }>
+                ติดต่อเรา
+              </Menu.Item>
             </Sidebar>
   
             <Sidebar.Pusher
@@ -52,23 +76,18 @@ export default class MobileContainer extends Component {
               style={{ minHeight: '100vh' }}
             >
               <Segment
-                inverted
                 textAlign='center'
                 style={{ minHeight: 350, padding: '1em 0em' }}
                 vertical
               >
                 <Container>
-                  <Menu inverted pointing secondary size='large'>
+                  <Menu pointing secondary size='large'>
                     <Menu.Item onClick={this.handleToggle}>
                       <Icon name='sidebar' />
                     </Menu.Item>
-                    <Menu.Item position='right'>
-                      <Button as='a' inverted>
-                        Log in
-                      </Button>
-                      <Button as='a' inverted style={{ marginLeft: '0.5em' }}>
-                        Sign Up
-                      </Button>
+                    <Menu.Item name='title' active={ false } position='right'
+                      style={{color: '#04004d'}}>
+                        ฝ่ายทรัยากรบุคคล คณะการบริหารและจัดการ
                     </Menu.Item>
                   </Menu>
                 </Container>

@@ -9,7 +9,7 @@ const newsCards = (props) => {
 
     const genearateNews = _.times(3, (idx) => {
         return (
-            <Grid.Column>
+            <Grid.Column key={ idx }>
                 <News card key={ idx } date={ 5 + idx } month={ 7 } year={ 2018 } imgSrc={ img } title='Title' description={ description }/>
             </Grid.Column>
         );

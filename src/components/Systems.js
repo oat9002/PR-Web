@@ -7,7 +7,7 @@ import _ from 'lodash';
 const systems = (props) => {
     const generateSystems = _.times(3, (idx) => {
         return (
-            <Grid.Column>
+            <Grid.Column key={ idx }>
                 <System key={ idx } imgSrc={ img }/>
             </Grid.Column>
         );

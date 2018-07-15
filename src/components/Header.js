@@ -25,13 +25,14 @@ import img from '../assets/pics/logo.jpg';
 import img2 from '../assets/pics/Logo2.jpg';
 
 class HomeHeader extends Component {
+
   render() {
     return (
       <Container>
         <Grid container stackable verticalAlign='middle'>
           <Grid.Row>
             <Grid.Column>
-              <Carousel height="500px" indicatorPosition="outside">
+              <Carousel height={ this.props.mobile ? '200px' : '500px' } indicatorPosition="outside">
                 <Carousel.Item>
                   <Image src={img}></Image>
                 </Carousel.Item>
