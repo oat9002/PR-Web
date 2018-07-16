@@ -65,7 +65,7 @@ export default class DesktopContainer extends Component {
             </Segment>
             <Segment
               textAlign='center'
-              style={{ minHeight: 400, padding: '1em 0em' }}
+              style={{ minHeight: 400, padding: '0em 0em' }}
               vertical
             >
               <Menu

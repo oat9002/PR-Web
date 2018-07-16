@@ -26,7 +26,7 @@ import FooterLogo from '../assets/pics/logo4.jpg';
 
 const Home = () => (
   <ResponsiveContainer>
-    <Segment style={{ padding: '3em 0em' }} vertical>
+    <Segment style={{ padding: '2em 0em' }} vertical>
       <MenuIcons></MenuIcons>
     </Segment>
     <Segment style={{ padding: '4em 0em' }} vertical>
