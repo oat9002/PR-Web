@@ -1,22 +1,15 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import {
-  Button,
   Container,
-  Divider,
-  Grid,
-  Header,
-  Icon,
   Image,
-  List,
   Menu,
   Responsive,
   Segment,
-  Sidebar,
   Visibility,
 } from 'semantic-ui-react'
 import HomeHeader from '../components/Header';
-import banner from 'D:/PR-Web/src/assets/pics/HeaderBanner.jpg'
+import banner from '../assets/pics/HeaderBanner.jpg'
 
 export default class DesktopContainer extends Component {
     state = {
@@ -70,9 +63,9 @@ export default class DesktopContainer extends Component {
             >
               <Menu
                 fixed={fixed ? 'top' : null}
-                pointing={!fixed}
-                secondary={!fixed}
                 size='large'
+                fluid
+                borderless
               >
                 <Container>
                   <Menu.Item name='title' active={ false } position='left'>
