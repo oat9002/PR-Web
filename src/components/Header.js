@@ -17,7 +17,8 @@ import img4 from '../assets/pics/header4.jpg';
 class HomeHeader extends Component {
   render() {
     const mobileSize = `${ Math.ceil(window.innerHeight * 0.4) }px`;
-    const desktopSize = `${ Math.ceil(window.innerHeight * 0.8) }px`;
+    const desktopSize = `${ Math.ceil(window.innerHeight * 0.55) }px`;
+    
 
     return (
       <Container>
@@ -25,7 +26,7 @@ class HomeHeader extends Component {
           <Grid.Row centered>
             <Grid.Column width={11}>
               <Carousel 
-                height={ this.props.mobile ? mobileSize : 400} 
+                height={ this.props.mobile ? mobileSize : desktopSize } 
                 indicatorPosition="outside"
                 trigger='click'
               >
