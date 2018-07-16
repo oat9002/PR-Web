@@ -25,7 +25,7 @@ class HomeHeader extends Component {
           <Grid.Row centered>
             <Grid.Column width={11}>
               <Carousel 
-                height={ this.props.mobile ? mobileSize : desktopSize } 
+                height={ this.props.mobile ? mobileSize : 400} 
                 indicatorPosition="outside"
                 trigger='click'
               >

@@ -65,7 +65,7 @@ export default class DesktopContainer extends Component {
             </Segment>
             <Segment
               textAlign='center'
-              style={{ minHeight: 400, padding: '1em 0em' }}
+              style={{ minHeight: 100, padding: '1em 0em' }}
               vertical
             >
               <Menu
@@ -82,25 +82,29 @@ export default class DesktopContainer extends Component {
                     name='aboutUs' 
                     active={ this.state.menuActived === 'aboutUs' } 
                     onClick={ this.menuClickedHandler }
-                    position='right'>
+                    position='right' 
+                    style ={{ 'color' : '#04004d' }} >
                     เกี่ยวกับเรา
                   </Menu.Item>
                   <Menu.Item 
                     name='empStructure' 
                     active={ this.state.menuActived === 'empStructure' } 
-                    onClick={ this.menuClickedHandler }>
+                    onClick={ this.menuClickedHandler }
+                    style ={{ 'color' : '#04004d' }} >
                     สารสนเทศบุคคลากร
                   </Menu.Item>
                   <Menu.Item 
                     name='empShouldKnow' 
                     active={ this.state.menuActived === 'empShouldKnow' } 
-                    onClick={ this.menuClickedHandler }>
+                    onClick={ this.menuClickedHandler }
+                    style ={{ 'color' : '#04004d' }} >
                     พนักงานควรรู้
                   </Menu.Item>
                   <Menu.Item 
                     name='contactUs' 
                     active={ this.state.menuActived === 'contactUs' } 
-                    onClick={ this.menuClickedHandler }>
+                    onClick={ this.menuClickedHandler }
+                    style ={{ 'color' : '#04004d' }} >
                     ติดต่อเรา
                   </Menu.Item>
                 </Container>
