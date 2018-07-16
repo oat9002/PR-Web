@@ -22,7 +22,7 @@ import NewsCard from './NewsCards';
 import Galleries from './Galleries';
 import Systems from './Systems';
 import Footer from './Footer';
-import FooterLogo from '../assets/pics/logo4.jpg';
+import FooterLogo from '../assets/pics/logo4_2.jpg';
 
 const Home = () => (
   <ResponsiveContainer>
@@ -68,7 +68,8 @@ const Home = () => (
     </Segment>
     <Segment 
       vertical 
-      style={{ padding: '5em 0em', backgroundImage: `url(${ FooterLogo })`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+      style={{ padding: '5em 0em', backgroundImage: `url(${ FooterLogo })`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
+    >
       <Footer></Footer>
     </Segment>
   </ResponsiveContainer>
