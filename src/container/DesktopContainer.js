@@ -16,6 +16,7 @@ import {
   Visibility,
 } from 'semantic-ui-react'
 import HomeHeader from '../components/Header';
+import banner from 'D:/PR-Web/src/assets/pics/HeaderBanner.jpg'
 
 export default class DesktopContainer extends Component {
     state = {
@@ -74,9 +75,8 @@ export default class DesktopContainer extends Component {
                 size='large'
               >
                 <Container>
-                  <Menu.Item name='title' active={ false } position='left'
-                  style={{color: '#04004d'}}>
-                    ฝ่ายทรัยากรบุคคล คณะการบริหารและจัดการ
+                  <Menu.Item name='title' active={ false } position='left'>
+                    <Image src = { banner }/> 
                   </Menu.Item>
                   <Menu.Item 
                     name='aboutUs' 

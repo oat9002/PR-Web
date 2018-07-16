@@ -10,7 +10,7 @@ import growth from '../assets/pics/growth.png'
 
 const menuIcons = (props) => {
     const numOfIcons = 6;
-    const width = Math.floor(16 / numOfIcons)
+    const width = Math.floor(17 / numOfIcons)
       return (
         <Grid container stackable verticalAlign='middle' >
             <Grid.Row centered>
