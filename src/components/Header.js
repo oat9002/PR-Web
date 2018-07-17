@@ -1,13 +1,6 @@
 import React, { Component } from 'react'
-import {
-    Container,
-    Grid,
-    Image,
-  } from 'semantic-ui-react'; 
-import {
-    Carousel
-  } from 'element-react';
-  
+import { Container, Grid, Image } from 'semantic-ui-react'; 
+import { Carousel } from 'element-react';
 import PropTypes from 'prop-types';
 import img from '../assets/pics/header1.jpg';
 import img2 from '../assets/pics/header2.jpg';
@@ -19,7 +12,6 @@ class HomeHeader extends Component {
     const mobileSize = `${ Math.ceil(window.innerHeight * 0.4) }px`;
     const desktopSize = `${ Math.ceil(window.innerHeight * 0.55) }px`;
     
-
     return (
       <Container>
         <Grid container stackable verticalAlign='middle'>
