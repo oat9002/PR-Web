@@ -48,10 +48,10 @@ export default class DesktopContainer extends Component {
               >
                 <Container>
                   <Menu.Item name='title' active={ false } position='right' style={{ color:'#ffffff' }}>
-                   menu 1
+                   <a href='//www.fam.kmitl.ac.th/' style ={{ 'color' : '#FFFFFF' }}>HR-KMITL</a>
                   </Menu.Item>
                   <Menu.Item name='title' active={ false } style={{ color:'#ffffff' }}>
-                   menu 2
+                   <a href='//www.fam.kmitl.ac.th/' style ={{ 'color' : '#FFFFFF' }}>FAM-KMITL</a>
                   </Menu.Item>
                 </Container>
               </Menu>
@@ -76,28 +76,28 @@ export default class DesktopContainer extends Component {
                     active={ this.state.menuActived === 'aboutUs' } 
                     onClick={ this.menuClickedHandler }
                     position='right' 
-                    style ={{ 'color' : '#04004d' }} >
+                    style ={{ 'color' : '#000099' }} >
                     เกี่ยวกับเรา
                   </Menu.Item>
                   <Menu.Item 
                     name='empStructure' 
                     active={ this.state.menuActived === 'empStructure' } 
                     onClick={ this.menuClickedHandler }
-                    style ={{ 'color' : '#04004d' }} >
+                    style ={{ 'color' : '#000099' }} >
                     สารสนเทศบุคคลากร
                   </Menu.Item>
                   <Menu.Item 
                     name='empShouldKnow' 
                     active={ this.state.menuActived === 'empShouldKnow' } 
                     onClick={ this.menuClickedHandler }
-                    style ={{ 'color' : '#04004d' }} >
+                    style ={{ 'color' : '#000099' }} >
                     พนักงานควรรู้
                   </Menu.Item>
                   <Menu.Item 
                     name='contactUs' 
                     active={ this.state.menuActived === 'contactUs' } 
                     onClick={ this.menuClickedHandler }
-                    style ={{ 'color' : '#04004d' }} >
+                    style ={{ 'color' : '#000099' }} >
                     ติดต่อเรา
                   </Menu.Item>
                 </Container>
