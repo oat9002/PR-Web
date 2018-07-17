@@ -48,10 +48,10 @@ export default class DesktopContainer extends Component {
               >
                 <Container>
                   <Menu.Item name='title' active={ false } position='right' style={{ color:'#ffffff' }}>
-                   menu 1
+                   <a href='//www.fam.kmitl.ac.th/' style ={{ 'color' : '#FFFFFF' }}>HR-KMITL</a>
                   </Menu.Item>
                   <Menu.Item name='title' active={ false } style={{ color:'#ffffff' }}>
-                   menu 2
+                   <a href='//www.fam.kmitl.ac.th/' style ={{ 'color' : '#FFFFFF' }}>FAM-KMITL</a>
                   </Menu.Item>
                 </Container>
               </Menu>
