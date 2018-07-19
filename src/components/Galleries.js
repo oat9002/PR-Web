@@ -1,6 +1,6 @@
 import React from 'react';
 import Gallery from './Gallery';
-import { Grid, GridColumn, Header } from 'semantic-ui-react';
+import { Grid, GridColumn, Header, Image } from 'semantic-ui-react';
 import gal1_01 from '../assets/pics/gal1_01.jpg';
 import gal1_02 from '../assets/pics/gal1_02.jpg';
 import gal1_03 from '../assets/pics/gal1_03.jpg';
@@ -27,11 +27,15 @@ const galleries = (props) => {
     return (
         <Grid.Row centered>
             <GridColumn width={7} textAlign='center'>
-                <Header as='h3'>ภาพประชุมบุคลาการใหม่สายสนับสนุนวิชาการ</Header>
+                <Header as='h4'>ภาพประชุมบุคลาการใหม่สายสนับสนุนวิชาการ</Header>
+                <Image centered size='medium' src={imgSrc1[0]} />
+                <br/>
                 <Gallery imgSrcs={ imgSrc1 } mobile={ props.mobile }></Gallery>
             </GridColumn>
             <Grid.Column width={7} textAlign='center'>
-                <Header as='h3'>ภาพประชุมบุคลาการใหม่สายวิชาการ</Header>
+                <Header as='h4'>ภาพประชุมบุคลาการใหม่สายวิชาการ</Header>
+                <Image centered size='medium' src={imgSrc2[0]} />
+                <br/>
                 <Gallery imgSrcs={ imgSrc2 }  mobile={ props.mobile }></Gallery>
             </Grid.Column>
         </Grid.Row>    
