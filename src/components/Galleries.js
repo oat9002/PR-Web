@@ -27,18 +27,14 @@ const galleries = (props) => {
     return (
         <Grid.Row centered>
             <GridColumn width={7} textAlign='center'>
-                <Header as='h4'>ภาพประชุมบุคลาการใหม่สายสนับสนุนวิชาการ</Header>
-                <Image centered size='medium' src={imgSrc1[0]} />
+                <Image centered size='medium' src={imgSrc1[0]} fluid label={{ color: 'orange', content: 'ภาพประชุมบุคลาการใหม่สายสนับสนุนวิชาการ', icon: 'picture', ribbon: true }}/>
                 <br/>
                 <Gallery imgSrcs={ imgSrc1 } mobile={ props.mobile }></Gallery>
-                <p style={{ padding:'1em' }}>คลิกที่รูปเพื่อดูรูปอื่น ๆ ภายในอัลบัม</p>
             </GridColumn>
             <Grid.Column width={7} textAlign='center'>
-                <Header as='h4'>ภาพประชุมบุคลาการใหม่สายวิชาการ</Header>
-                <Image centered size='medium' src={imgSrc2[0]} />
+                <Image centered size='medium' src={imgSrc2[0]} fluid label={{ color: 'orange', content: 'ภาพประชุมบุคลาการใหม่สายสนับสนุนวิชาการ', icon: 'picture', ribbon: true }}/>
                 <br/>
                 <Gallery imgSrcs={ imgSrc2 }  mobile={ props.mobile }></Gallery>
-                <p style={{ padding:'1em' }}>คลิกที่รูปเพื่อดูรูปอื่น ๆ ภายในอัลบัม</p>
             </Grid.Column>
         </Grid.Row>    
     )

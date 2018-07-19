@@ -21,9 +21,7 @@ const Home = () => (
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={ 8 }>
-            <Header as='h1' style={{ fontSize: '2em' }}>
-              News
-            </Header>
+            <Header as='h1' style={{ fontSize: '2em' }} icon='newspaper' content='News'/>
           </Grid.Column>
         </Grid.Row>
         <NewsCard></NewsCard>
@@ -34,9 +32,7 @@ const Home = () => (
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={8}>
-            <Header as='h1' style={{ fontSize: '2em' }}>
-              Gallery
-            </Header>
+            <Header as='h1' icon='picture' style={{ fontSize: '2em' }} content='Gallery'></Header>
           </Grid.Column>
         </Grid.Row>
         <Galleries></Galleries>
