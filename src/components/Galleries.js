@@ -31,12 +31,14 @@ const galleries = (props) => {
                 <Image centered size='medium' src={imgSrc1[0]} />
                 <br/>
                 <Gallery imgSrcs={ imgSrc1 } mobile={ props.mobile }></Gallery>
+                <div id="txt1">คลิกที่รูปเพื่อดูรูปอื่น ๆ ภายในอัลบัม</div>
             </GridColumn>
             <Grid.Column width={7} textAlign='center'>
                 <Header as='h4'>ภาพประชุมบุคลาการใหม่สายวิชาการ</Header>
                 <Image centered size='medium' src={imgSrc2[0]} />
                 <br/>
                 <Gallery imgSrcs={ imgSrc2 }  mobile={ props.mobile }></Gallery>
+                <div id="txt1">คลิกที่รูปเพื่อดูรูปอื่น ๆ ภายในอัลบัม</div>
             </Grid.Column>
         </Grid.Row>    
     )
