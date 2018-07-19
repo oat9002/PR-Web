@@ -15,7 +15,7 @@ class Gallery extends Component {
 
     render() {
         const mobileSize = `${ Math.ceil(window.innerHeight * 0.4) }px`;
-        const desktopSize = `${ Math.ceil(window.innerHeight * 0.55) }px`;
+        const desktopSize = `${ Math.ceil(window.innerHeight * 0.8) }px`;
 
         return (
             //<Transition visible={this.state.visible} animation='scale' duration={ 500 }>
