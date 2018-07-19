@@ -29,12 +29,12 @@ const galleries = (props) => {
             <GridColumn width={7} textAlign='center'>
                 <Header as='h3'>ภาพประชุมบุคลาการใหม่สายสนับสนุนวิชาการ</Header>
                 <Gallery imgSrcs={ imgSrc1 } mobile={ props.mobile }></Gallery>
-                <div id="txt1">คลิกที่รูปเพื่อดูรูปภายในอัลบัม</div>
+                <div id="txt1">คลิกที่รูปเพื่อดูรูปอื่น ๆ ภายในอัลบัม</div>
             </GridColumn>
             <Grid.Column width={7} textAlign='center'>
                 <Header as='h3'>ภาพประชุมบุคลาการใหม่สายวิชาการ</Header>
                 <Gallery imgSrcs={ imgSrc2 }  mobile={ props.mobile }></Gallery>
-                <div id="txt1">คลิกที่รูปเพื่อดูรูปภายในอัลบัม</div>
+                <div id="txt1">คลิกที่รูปเพื่อดูรูปอื่น ๆ ภายในอัลบัม</div>
             </Grid.Column>
         </Grid.Row>    
     )
