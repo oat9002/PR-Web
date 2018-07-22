@@ -6,11 +6,12 @@ class Gallery extends Component {
 
     render() {
         const mobileSize = `${ Math.ceil(window.innerHeight * 0.4) }px`;
-        const desktopSize = `${ Math.ceil(window.innerHeight * 0.8) }px`;
+        const desktopSize = `${ Math.ceil(window.innerHeight * 0.6) }px`;
 
         return ( 
             <Modal
                 trigger={ <Button size='small' basic color='blue'>คลิกเพื่อดูภาพ</Button> }
+                closeIcon
             >
                 <Modal.Content>
                     <Carousel 
