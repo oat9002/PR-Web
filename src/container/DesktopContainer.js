@@ -7,15 +7,15 @@ import {
   Responsive,
   Segment,
   Visibility,
+  Dropdown
 } from 'semantic-ui-react'
-import HomeHeader from '../components/Header';
 import banner from '../assets/pics/HeaderBanner.jpg'
+import { Link } from 'react-router-dom';
 
 export default class DesktopContainer extends Component {
     state = {
       fixed: false,
       menuActived: '',
-      visible: true
     }
   
     hideFixedMenu = () => this.setState({ fixed: false })
@@ -58,7 +58,7 @@ export default class DesktopContainer extends Component {
             </Segment>
             <Segment
               textAlign='center'
-              style={{ minHeight: 400, padding: '0em 0em' }}
+              style={{ padding: '0em 0em', border: '0px' }}
               vertical
             >
               <Menu
@@ -71,13 +71,37 @@ export default class DesktopContainer extends Component {
                   <Menu.Item name='title' active={ false } position='left'>
                     <Image src = { banner }/> 
                   </Menu.Item>
+                  <Menu.Menu position='right'>
+                    <Dropdown simple item text='เกี่ยวกับเรา'>
+                      <Dropdown.Menu>
+                        <Dropdown.Item as='a' href='/test'>วิสัยทัศน์ พันธกิจ ภารกิจ</Dropdown.Item>
+                        <Dropdown simple item text='โครงสร้างกองทรัพยากรบุคคล'>
+                          <Dropdown.Menu>
+                            <Dropdown.Item as='a' href='/test'>งานบริหารทรัพยากรบุคคล</Dropdown.Item>
+                            <Dropdown.Item>งานบริหารสวัสดิการและสิทธิประโยชน์</Dropdown.Item>
+                            <Dropdown.Item>งานยุทธศาสตร์และพัฒนาระบบบริหารทรัพยากรบุคคล</Dropdown.Item>
+                            <Dropdown.Item>งานสร้างเศริมศักยาภาพและพัฒนาทรัพยากรบุคคล</Dropdown.Item>
+                            <Dropdown.Item>งานความก้าวหน้าในสายงานวิชาการเเละสนับสนุน</Dropdown.Item>
+                          </Dropdown.Menu>
+                        </Dropdown>
+                        <Dropdown simple item compact text='แผนยุทธศาสตร์การบริหารทรัพยากรบุคคล'>
+                          <Dropdown.Menu>
+                            <Dropdown.Item as='a' href='/test'>Electronics</Dropdown.Item>
+                            <Dropdown.Item>Automotive</Dropdown.Item>
+                            <Dropdown.Item>Home</Dropdown.Item>
+                          </Dropdown.Menu>
+                        </Dropdown>
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  </Menu.Menu>
                   <Menu.Item 
                     name='aboutUs' 
                     active={ this.state.menuActived === 'aboutUs' } 
                     onClick={ this.menuClickedHandler }
                     position='right' 
-                    style ={{ 'color' : '#000099' }} >
-                    เกี่ยวกับเรา
+                    style ={{ 'color' : '#000099' }} 
+                    >
+                      เกี่ยวกับเรา
                   </Menu.Item>
                   <Menu.Item 
                     name='empStructure' 
@@ -102,7 +126,6 @@ export default class DesktopContainer extends Component {
                   </Menu.Item>
                 </Container>
               </Menu>
-              <HomeHeader visible={this.state.visible} />
             </Segment>
           </Visibility>
           {children}

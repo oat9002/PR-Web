@@ -11,9 +11,11 @@ import NewsCard from './NewsCards';
 import Galleries from './Galleries';
 import Footer from './Footer';
 import FooterLogo from '../assets/pics/logo4_2.jpg';
+import HomeHeader from './Header';
 
 const Home = () => (
   <ResponsiveContainer>
+    <HomeHeader/>
     <Segment style={{ padding: '2em 0em' }} vertical>
       <MenuIcons></MenuIcons>
     </Segment>

@@ -6,7 +6,7 @@ class Gallery extends Component {
 
     render() {
         const mobileSize = `${ Math.ceil(window.innerHeight * 0.4) }px`;
-        const desktopSize = `${ Math.ceil(window.innerHeight * 0.6) }px`;
+        const desktopSize = `${ Math.ceil(window.innerHeight * 0.7) }px`;
 
         return ( 
             <Modal
@@ -16,13 +16,13 @@ class Gallery extends Component {
                 <Modal.Content>
                     <Carousel 
                         height={ window.innerHeight > window.innerWidth ? mobileSize : desktopSize } 
-                        indicatorPosition="outside"
+                        indicatorPosition="none"
                         trigger='click'
                     >
                         { 
                             this.props.imgSrcs.map((src, idx) => (
                                 <Carousel.Item key={ idx }>
-                                    <Image key={ idx } src={ src }></Image>
+                                    <Image verticalAlign='middle' centered rounded key={ idx } src={ src }></Image>
                                 </Carousel.Item>
                             ))
                         }

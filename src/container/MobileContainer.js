@@ -41,7 +41,7 @@ export default class MobileContainer extends Component {
   
       return (
         <Responsive {...Responsive.onlyMobile}>
-          <Sidebar.Pushable inverted>
+          <Sidebar.Pushable>
             <Sidebar as={Menu} animation='uncover' vertical visible={sidebarOpened}>
               <Menu.Item 
                 name='aboutUs' 
@@ -77,7 +77,7 @@ export default class MobileContainer extends Component {
             >
               <Segment
                 textAlign='center'
-                style={{ minHeight: 350, padding: '1em 0em' }}
+                style={{padding: '0em 0em', border: '0px' }}
                 vertical
               >
                 <Container>
@@ -91,7 +91,6 @@ export default class MobileContainer extends Component {
                     </Menu.Item>
                   </Menu>
                 </Container>
-                <HomeHeader mobile />
               </Segment>
               {children}
             </Sidebar.Pusher>

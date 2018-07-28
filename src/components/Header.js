@@ -13,12 +13,12 @@ class HomeHeader extends Component {
     const desktopSize = `${ Math.ceil(window.innerHeight * 0.55) }px`;
     
     return (
-      <Container>
+      <Container style={{ padding: '1em 0em' }}>
         <Grid container stackable verticalAlign='middle'>
           <Grid.Row centered>
             <Grid.Column width={11}>
               <Carousel 
-                height={ this.props.mobile ? mobileSize : desktopSize } 
+                height={ window.innerHeight > window.innerWidth ? mobileSize : desktopSize } 
                 indicatorPosition="outside"
                 trigger='click'
               >
