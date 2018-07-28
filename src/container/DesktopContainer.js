@@ -71,7 +71,7 @@ export default class DesktopContainer extends Component {
                   <Menu.Item name='title' active={ false } position='left'>
                     <Image src = { banner }/> 
                   </Menu.Item>
-                  <Menu.Menu position='right'>
+                  <Menu.Menu position='right' >
                     <Dropdown simple item text='เกี่ยวกับเรา'>
                       <Dropdown.Menu>
                         <Dropdown.Item as='a' href='/test'>วิสัยทัศน์ พันธกิจ ภารกิจ</Dropdown.Item>
@@ -80,50 +80,57 @@ export default class DesktopContainer extends Component {
                             <Dropdown.Item as='a' href='/test'>งานบริหารทรัพยากรบุคคล</Dropdown.Item>
                             <Dropdown.Item>งานบริหารสวัสดิการและสิทธิประโยชน์</Dropdown.Item>
                             <Dropdown.Item>งานยุทธศาสตร์และพัฒนาระบบบริหารทรัพยากรบุคคล</Dropdown.Item>
-                            <Dropdown.Item>งานสร้างเศริมศักยาภาพและพัฒนาทรัพยากรบุคคล</Dropdown.Item>
+                            <Dropdown simple item text='งานสร้างเศริมศักยาภาพและพัฒนาทรัพยากรบุคคล'>
+                              <Dropdown.Menu>
+                                <Dropdown.Item as='a' href='/test'>หลักสูตร/โครงสร้างการพัฒนาทรัพยากรบุคคล</Dropdown.Item>
+                                <Dropdown.Item>การประเมินผลการปฏิบัติงาน</Dropdown.Item>
+                                <Dropdown.Item>ทุน</Dropdown.Item>
+                              </Dropdown.Menu>
+                              </Dropdown>
                             <Dropdown.Item>งานความก้าวหน้าในสายงานวิชาการเเละสนับสนุน</Dropdown.Item>
                           </Dropdown.Menu>
                         </Dropdown>
                         <Dropdown simple item compact text='แผนยุทธศาสตร์การบริหารทรัพยากรบุคคล'>
                           <Dropdown.Menu>
-                            <Dropdown.Item as='a' href='/test'>Electronics</Dropdown.Item>
-                            <Dropdown.Item>Automotive</Dropdown.Item>
-                            <Dropdown.Item>Home</Dropdown.Item>
-                          </Dropdown.Menu>
+                            <Dropdown.Item as='a' href='/test'>แผนยุทธศาสตร์การบริหารทรัพยากรบุคคล(PDF)</Dropdown.Item>
+                        </Dropdown.Menu>
                         </Dropdown>
+                        <Dropdown.Item as='a' href='/test'>ค่านิยองค์กร</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
                   </Menu.Menu>
-                  <Menu.Item 
-                    name='aboutUs' 
-                    active={ this.state.menuActived === 'aboutUs' } 
-                    onClick={ this.menuClickedHandler }
-                    position='right' 
-                    style ={{ 'color' : '#000099' }} 
-                    >
-                      เกี่ยวกับเรา
-                  </Menu.Item>
-                  <Menu.Item 
-                    name='empStructure' 
-                    active={ this.state.menuActived === 'empStructure' } 
-                    onClick={ this.menuClickedHandler }
-                    style ={{ 'color' : '#000099' }} >
-                    สารสนเทศบุคคลากร
-                  </Menu.Item>
-                  <Menu.Item 
-                    name='empShouldKnow' 
-                    active={ this.state.menuActived === 'empShouldKnow' } 
-                    onClick={ this.menuClickedHandler }
-                    style ={{ 'color' : '#000099' }} >
-                    พนักงานควรรู้
-                  </Menu.Item>
-                  <Menu.Item 
-                    name='contactUs' 
-                    active={ this.state.menuActived === 'contactUs' } 
-                    onClick={ this.menuClickedHandler }
-                    style ={{ 'color' : '#000099' }} >
-                    ติดต่อเรา
-                  </Menu.Item>
+
+
+
+                  <Menu.Menu position='right'>
+                    <Dropdown simple item text='สารสนเทศบุคลากร'>
+                      <Dropdown.Menu>
+                        <Dropdown.Item as='a' href='/test'>รายงานข้อมูลสารสนเทศบุคลกร</Dropdown.Item>
+                        <Dropdown.Item as='a' href='/test'>แผนภาพและข้อมูลแสดงการกระจายอายุของบุคลากร</Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  </Menu.Menu>
+
+                  <Menu.Menu position='right'>
+                    <Dropdown simple item text='พนักงานควรรู้'>
+                      <Dropdown.Menu>
+                        <Dropdown.Item as='a' href='/test'>คู่มือพนักงาน</Dropdown.Item>
+                        <Dropdown.Item as='a' href='/test'>Infographic</Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  </Menu.Menu>
+
+
+                  <Menu.Menu position='right'>
+                    <Dropdown simple item text='ติดต่อเรา'>
+                      <Dropdown.Menu>
+                        <Dropdown.Item as='a' href='/test'>ติดต่อบุคลากรทรัพยากรบุคคล</Dropdown.Item>
+                        <Dropdown.Item as='a' href='/test'>ส่งคำถาม/ข้อเสนอแนะ</Dropdown.Item>
+                        <Dropdown.Item as='a' href='/test'>นักศึกษาติดต่อเข้าฝึกงาน/ผู้สนใจติดต่อเข้าศึกษาดูงานกองทรัพยากรบุคคล</Dropdown.Item>
+                        <Dropdown.Item as='a' href='/test'>แผนที่-การเดินทาง</Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  </Menu.Menu>
                 </Container>
               </Menu>
             </Segment>
