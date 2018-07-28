@@ -1,6 +1,6 @@
 import React from 'react';
 import Gallery from './Gallery';
-import { Grid, GridColumn, Header, Image } from 'semantic-ui-react';
+import { Grid, GridColumn, Image } from 'semantic-ui-react';
 import gal1_01 from '../assets/pics/gal1_01.jpg';
 import gal1_02 from '../assets/pics/gal1_02.jpg';
 import gal1_03 from '../assets/pics/gal1_03.jpg';

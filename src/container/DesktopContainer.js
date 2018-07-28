@@ -10,7 +10,6 @@ import {
   Dropdown
 } from 'semantic-ui-react'
 import banner from '../assets/pics/HeaderBanner.jpg'
-import { Link } from 'react-router-dom';
 
 export default class DesktopContainer extends Component {
     state = {
@@ -74,15 +73,15 @@ export default class DesktopContainer extends Component {
                   <Menu.Menu position='right' >
                     <Dropdown simple item text='เกี่ยวกับเรา'>
                       <Dropdown.Menu>
-                        <Dropdown.Item as='a' href='/test'>วิสัยทัศน์ พันธกิจ ภารกิจ</Dropdown.Item>
+                        <Dropdown.Item as='a' >วิสัยทัศน์ พันธกิจ ภารกิจ</Dropdown.Item>
                         <Dropdown simple item text='โครงสร้างกองทรัพยากรบุคคล'>
                           <Dropdown.Menu>
-                            <Dropdown.Item as='a' href='/test'>งานบริหารทรัพยากรบุคคล</Dropdown.Item>
+                            <Dropdown.Item as='a' >งานบริหารทรัพยากรบุคคล</Dropdown.Item>
                             <Dropdown.Item>งานบริหารสวัสดิการและสิทธิประโยชน์</Dropdown.Item>
                             <Dropdown.Item>งานยุทธศาสตร์และพัฒนาระบบบริหารทรัพยากรบุคคล</Dropdown.Item>
                             <Dropdown simple item text='งานสร้างเศริมศักยาภาพและพัฒนาทรัพยากรบุคคล'>
                               <Dropdown.Menu>
-                                <Dropdown.Item as='a' href='/test'>หลักสูตร/โครงสร้างการพัฒนาทรัพยากรบุคคล</Dropdown.Item>
+                                <Dropdown.Item as='a' >หลักสูตร/โครงสร้างการพัฒนาทรัพยากรบุคคล</Dropdown.Item>
                                 <Dropdown.Item>การประเมินผลการปฏิบัติงาน</Dropdown.Item>
                                 <Dropdown.Item>ทุน</Dropdown.Item>
                               </Dropdown.Menu>
@@ -90,44 +89,38 @@ export default class DesktopContainer extends Component {
                             <Dropdown.Item>งานความก้าวหน้าในสายงานวิชาการเเละสนับสนุน</Dropdown.Item>
                           </Dropdown.Menu>
                         </Dropdown>
-                        <Dropdown simple item compact text='แผนยุทธศาสตร์การบริหารทรัพยากรบุคคล'>
+                        <Dropdown simple item text='แผนยุทธศาสตร์การบริหารทรัพยากรบุคคล'>
                           <Dropdown.Menu>
-                            <Dropdown.Item as='a' href='/test'>แผนยุทธศาสตร์การบริหารทรัพยากรบุคคล(PDF)</Dropdown.Item>
+                            <Dropdown.Item as='a' >แผนยุทธศาสตร์การบริหารทรัพยากรบุคคล(PDF)</Dropdown.Item>
                         </Dropdown.Menu>
                         </Dropdown>
-                        <Dropdown.Item as='a' href='/test'>ค่านิยองค์กร</Dropdown.Item>
+                        <Dropdown.Item as='a' >ค่านิยองค์กร</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
                   </Menu.Menu>
-
-
-
                   <Menu.Menu position='right'>
                     <Dropdown simple item text='สารสนเทศบุคลากร'>
                       <Dropdown.Menu>
-                        <Dropdown.Item as='a' href='/test'>รายงานข้อมูลสารสนเทศบุคลกร</Dropdown.Item>
-                        <Dropdown.Item as='a' href='/test'>แผนภาพและข้อมูลแสดงการกระจายอายุของบุคลากร</Dropdown.Item>
+                        <Dropdown.Item as='a' >รายงานข้อมูลสารสนเทศบุคลกร</Dropdown.Item>
+                        <Dropdown.Item as='a' >แผนภาพและข้อมูลแสดงการกระจายอายุของบุคลากร</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
                   </Menu.Menu>
-
                   <Menu.Menu position='right'>
                     <Dropdown simple item text='พนักงานควรรู้'>
                       <Dropdown.Menu>
-                        <Dropdown.Item as='a' href='/test'>คู่มือพนักงาน</Dropdown.Item>
-                        <Dropdown.Item as='a' href='/test'>Infographic</Dropdown.Item>
+                        <Dropdown.Item as='a' >คู่มือพนักงาน</Dropdown.Item>
+                        <Dropdown.Item as='a' >Infographic</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
                   </Menu.Menu>
-
-
                   <Menu.Menu position='right'>
                     <Dropdown simple item text='ติดต่อเรา'>
                       <Dropdown.Menu>
-                        <Dropdown.Item as='a' href='/test'>ติดต่อบุคลากรทรัพยากรบุคคล</Dropdown.Item>
-                        <Dropdown.Item as='a' href='/test'>ส่งคำถาม/ข้อเสนอแนะ</Dropdown.Item>
-                        <Dropdown.Item as='a' href='/test'>นักศึกษาติดต่อเข้าฝึกงาน/ผู้สนใจติดต่อเข้าศึกษาดูงานกองทรัพยากรบุคคล</Dropdown.Item>
-                        <Dropdown.Item as='a' href='/test'>แผนที่-การเดินทาง</Dropdown.Item>
+                        <Dropdown.Item as='a' >ติดต่อบุคลากรทรัพยากรบุคคล</Dropdown.Item>
+                        <Dropdown.Item as='a' >ส่งคำถาม/ข้อเสนอแนะ</Dropdown.Item>
+                        <Dropdown.Item as='a' >นักศึกษาติดต่อเข้าฝึกงาน/ผู้สนใจติดต่อเข้าศึกษาดูงานกองทรัพยากรบุคคล</Dropdown.Item>
+                        <Dropdown.Item as='a' >แผนที่-การเดินทาง</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
                   </Menu.Menu>

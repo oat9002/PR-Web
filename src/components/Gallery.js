@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Modal, Image, Button, Transition } from 'semantic-ui-react';
+import { Modal, Image, Button } from 'semantic-ui-react';
 import { Carousel } from 'element-react';
 
 class Gallery extends Component {
@@ -10,7 +10,7 @@ class Gallery extends Component {
 
         return ( 
             <Modal
-                trigger={ <Button size='small' basic color='blue'>คลิกเพื่อดูภาพ</Button> }
+                trigger={ <Button style={{ margin:'0.5em 0em' }}size='small' basic color='blue'>คลิกเพื่อดูภาพ</Button> }
                 closeIcon
             >
                 <Modal.Content>

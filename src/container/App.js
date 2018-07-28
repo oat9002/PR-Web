@@ -3,7 +3,12 @@ import './App.css';
 import Home from '../components/Home';
 import 'element-theme-default';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Contact from '../components/Contact';
+import ApplyJob from '../components/ApplyJob';
+import Development from '../components/Development';
+import Welfare from '../components/Welfare';
+import Evaluation from '../components/Evaluation';
+import Progress from '../components/Progress';
+import ShouldKnow from '../components/ShouldKnow';
 
 class App extends Component {
   render() {
@@ -11,7 +16,12 @@ class App extends Component {
       <Router>
         <div>
           <Route exact path='/' component={ Home }/>
-          <Route path='/test' component={ Contact } />>
+          <Route path='/applyjob' component={ ApplyJob } />
+          <Route path='/shouldknow' component={ ShouldKnow } />
+          <Route path='/progress' component={ Progress } />
+          <Route path='/development' component={ Development } />
+          <Route path='/evaluation' component={ Evaluation } />
+          <Route path='/welfare' component={ Welfare } />
         </div>
       </Router>
     );

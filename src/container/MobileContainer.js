@@ -1,21 +1,14 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import {
-  Button,
   Container,
-  Divider,
-  Grid,
-  Header,
   Icon,
-  Image,
-  List,
+  Dropdown,
   Menu,
   Responsive,
   Segment,
   Sidebar,
-  Visibility,
 } from 'semantic-ui-react';
-import HomeHeader from '../components/Header';
 
 export default class MobileContainer extends Component {
     state = {}
@@ -43,31 +36,60 @@ export default class MobileContainer extends Component {
         <Responsive {...Responsive.onlyMobile}>
           <Sidebar.Pushable>
             <Sidebar as={Menu} animation='uncover' vertical visible={sidebarOpened}>
-              <Menu.Item 
-                name='aboutUs' 
-                active={ this.state.menuActived === 'aboutUs' } 
-                onClick={ this.menuClickedHandler }
-                position='right'>
-                เกี่ยวกับเรา
-              </Menu.Item>
-              <Menu.Item 
-                name='empStructure' 
-                active={ this.state.menuActived === 'empStructure' } 
-                onClick={ this.menuClickedHandler }>
-                สารสนเทศบุคคลากร
-              </Menu.Item>
-              <Menu.Item 
-                name='empShouldKnow' 
-                active={ this.state.menuActived === 'empShouldKnow' } 
-                onClick={ this.menuClickedHandler }>
-                พนักงานควรรู้
-              </Menu.Item>
-              <Menu.Item 
-                name='contactUs' 
-                active={ this.state.menuActived === 'contactUs' } 
-                onClick={ this.menuClickedHandler }>
-                ติดต่อเรา
-              </Menu.Item>
+              <Menu.Menu position='right' >
+                <Dropdown simple item text='เกี่ยวกับเรา'>
+                        <Dropdown.Menu>
+                          <Dropdown.Item as='a' >วิสัยทัศน์ พันธกิจ ภารกิจ</Dropdown.Item>
+                          <Dropdown simple item text='โครงสร้างกองทรัพยากรบุคคล'>
+                            <Dropdown.Menu>
+                              <Dropdown.Item as='a' >งานบริหารทรัพยากรบุคคล</Dropdown.Item>
+                              <Dropdown.Item>งานบริหารสวัสดิการและสิทธิประโยชน์</Dropdown.Item>
+                              <Dropdown.Item>งานยุทธศาสตร์และพัฒนาระบบบริหารทรัพยากรบุคคล</Dropdown.Item>
+                              <Dropdown simple item text='งานสร้างเศริมศักยาภาพและพัฒนาทรัพยากรบุคคล'>
+                                <Dropdown.Menu>
+                                  <Dropdown.Item as='a' >หลักสูตร/โครงสร้างการพัฒนาทรัพยากรบุคคล</Dropdown.Item>
+                                  <Dropdown.Item>การประเมินผลการปฏิบัติงาน</Dropdown.Item>
+                                  <Dropdown.Item>ทุน</Dropdown.Item>
+                                </Dropdown.Menu>
+                                </Dropdown>
+                              <Dropdown.Item>งานความก้าวหน้าในสายงานวิชาการเเละสนับสนุน</Dropdown.Item>
+                            </Dropdown.Menu>
+                          </Dropdown>
+                          <Dropdown simple item text='แผนยุทธศาสตร์การบริหารทรัพยากรบุคคล'>
+                            <Dropdown.Menu>
+                              <Dropdown.Item as='a' >แผนยุทธศาสตร์การบริหารทรัพยากรบุคคล(PDF)</Dropdown.Item>
+                          </Dropdown.Menu>
+                          </Dropdown>
+                          <Dropdown.Item as='a' >ค่านิยองค์กร</Dropdown.Item>
+                        </Dropdown.Menu>
+                      </Dropdown>
+                    </Menu.Menu>
+                    <Menu.Menu position='right'>
+                      <Dropdown simple item text='สารสนเทศบุคลากร'>
+                        <Dropdown.Menu>
+                          <Dropdown.Item as='a' >รายงานข้อมูลสารสนเทศบุคลกร</Dropdown.Item>
+                          <Dropdown.Item as='a' >แผนภาพและข้อมูลแสดงการกระจายอายุของบุคลากร</Dropdown.Item>
+                        </Dropdown.Menu>
+                      </Dropdown>
+                    </Menu.Menu>
+                    <Menu.Menu position='right'>
+                      <Dropdown simple item text='พนักงานควรรู้'>
+                        <Dropdown.Menu>
+                          <Dropdown.Item as='a' >คู่มือพนักงาน</Dropdown.Item>
+                          <Dropdown.Item as='a' >Infographic</Dropdown.Item>
+                        </Dropdown.Menu>
+                      </Dropdown>
+                    </Menu.Menu>
+                    <Menu.Menu position='right'>
+                      <Dropdown simple item text='ติดต่อเรา'>
+                        <Dropdown.Menu>
+                          <Dropdown.Item as='a' >ติดต่อบุคลากรทรัพยากรบุคคล</Dropdown.Item>
+                          <Dropdown.Item as='a' >ส่งคำถาม/ข้อเสนอแนะ</Dropdown.Item>
+                          <Dropdown.Item as='a' >นักศึกษาติดต่อเข้าฝึกงาน/ผู้สนใจติดต่อเข้าศึกษาดูงานกองทรัพยากรบุคคล</Dropdown.Item>
+                          <Dropdown.Item as='a' >แผนที่-การเดินทาง</Dropdown.Item>
+                        </Dropdown.Menu>
+                      </Dropdown>
+                    </Menu.Menu>
             </Sidebar>
   
             <Sidebar.Pusher
