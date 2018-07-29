@@ -1,10 +1,16 @@
 import React from 'react';
+import { Container, Grid, Header, List } from 'semantic-ui-react';
 import ReponsiveContainer from '../container/ResponsiveContainer';
 
 const shouldKnow = (props) => {
     return (
         <ReponsiveContainer>
-            <p>Test</p>
+            <Header inverted as='h2' content='พนักงานควรรู้' />
+
+            <a href = '//drive.google.com/file/d/19lqRY4Dc8u8SJpnivWOTTzY-nS1qTQUy/view?usp=sharing'>คู่มือพนักงานสถาบันกับสิ่งที่พนักงานสถาบันควรู้ในการปฏิบัติงาน-ส่วนกลาง</a>
+            <a href = '//drive.google.com/file/d/1_B_myd-t4H8qSGH7BR0RV_wsTPpok6Vn/view?usp=sharing'><br />เครืองแบบพนักงานสถาบันและข้าราชการ-เครื่องแบบหน่วยงาน</a>
+            <a href = '//drive.google.com/file/d/1l-gjLqpDZbU9155evM_2kjU7xyikAKuS/view?usp=sharing'><br />จรรยาบรรณของผู้ปฏิบัติงานในสถาบัน -จรรยาบรรณ</a>
+           
         </ReponsiveContainer>
     );
 }

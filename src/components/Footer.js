@@ -31,22 +31,22 @@ const footer = () => (
             <Grid.Column width={5}>
               <Header inverted as='h4' content='Services' />
               <List link inverted>
-                <List.Item as='a'>
+                <List.Item as='a' href='/applyjob'>
                   สมัครงาน
                 </List.Item>
-                <List.Item as='a'>
+                <List.Item as='a'href='/shouldknow'>
                   พนักงานควรรู้
                 </List.Item>
-                <List.Item as='a'>
+                <List.Item as='a' href='/welfare'>
                   สวัสดิการ
                 </List.Item>
-                <List.Item as='a'>
+                <List.Item as='a' href='/development'>
                   พัฒนาบุคลากร
                 </List.Item>
-                <List.Item as='a'>
+                <List.Item as='a'href='/progress'>
                   ความก้าวหน้า
                 </List.Item>
-                <List.Item as='a'>
+                <List.Item as='a' href='/evaluation'>
                   ประเมินผลการปฏิบัตงาน
                 </List.Item>
               </List>
