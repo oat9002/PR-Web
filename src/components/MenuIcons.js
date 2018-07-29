@@ -13,27 +13,27 @@ const menuIcons = (props) => {
       return (
         <Grid container stackable verticalAlign='middle' >
             <Grid.Row centered>
-                <Grid.Column width={ width } >
+                <Grid.Column width={ width } style={{ textAlign: 'center' }}>
                    <Image as='a' href='/applyjob' size='small' src={ register } />
                 </Grid.Column>
 
-                <Grid.Column width={ width }>
+                <Grid.Column width={ width } style={{ textAlign: 'center' }}>
                    <Image as='a' href='/shouldknow' size='small' src={ fyi } />
                 </Grid.Column>
 
-                <Grid.Column width={ width }>
+                <Grid.Column width={ width } style={{ textAlign: 'center' }}>
                     <Image as='a' href='/welfare' size='small' src={ welfare } />
                 </Grid.Column>
 
-                <Grid.Column width={ width }>
+                <Grid.Column width={ width } style={{ textAlign: 'center' }}>
                     <Image as='a' href='/development' size='small' src={ develop } />
                 </Grid.Column>
 
-                <Grid.Column width={ width }>
+                <Grid.Column width={ width } style={{ textAlign: 'center' }}>
                     <Image as='a' href='/progress' size='small' src={ growth } />
                 </Grid.Column>
 
-                <Grid.Column width={ width }>
+                <Grid.Column width={ width } style={{ textAlign: 'center' }}>
                     <Image as='a' href='/evaluation' size='small' src={ evaluation } />
                 </Grid.Column>
                 

@@ -10,7 +10,7 @@ class Gallery extends Component {
 
         return ( 
             <Modal
-                trigger={ <Button style={{ margin:'0.5em 0em' }}size='small' basic color='blue'>คลิกเพื่อดูภาพ</Button> }
+                trigger={ <Button style={{ margin:'1em 0em' }}size='small' basic color='blue'>คลิกเพื่อดูภาพ</Button> }
                 closeIcon
             >
                 <Modal.Content>

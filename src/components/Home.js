@@ -26,7 +26,6 @@ const Home = () => (
             <Header as='h1' style={{ fontSize: '2em' }} icon='newspaper' content='News'/>
           </Grid.Column>
         </Grid.Row>
-        <NewsCard></NewsCard>
         <NewsItems></NewsItems>
       </Grid>
     </Segment>

@@ -49,17 +49,17 @@ const galleries = (props) => {
     return (
         <Grid.Row centered>
             <GridColumn width={7} textAlign='center'>
-                <Image centered size='medium' src={imgSrc1[0]} label={{ color: 'orange', content: 'ภาพประชุมบุคลาการใหม่สายสนับสนุนวิชาการ', icon: 'picture', ribbon: true }}/>
+                <Image centered size='big' src={imgSrc1[0]} label={{ color: 'orange', content: 'ภาพประชุมบุคลาการใหม่สายสนับสนุนวิชาการ', icon: 'picture', ribbon: true }}/>
                 <br/>
                 <Gallery imgSrcs={ imgSrc1 } mobile={ props.mobile }></Gallery>
             </GridColumn>
             <Grid.Column width={7} textAlign='center'>
-                <Image centered size='medium' src={imgSrc2[0]} label={{ color: 'orange', content: 'ภาพประชุมบุคลาการใหม่สายสนับสนุนวิชาการ', icon: 'picture', ribbon: true }}/>
+                <Image centered size='big' src={imgSrc2[0]} label={{ color: 'orange', content: 'ภาพประชุมบุคลาการใหม่สายสนับสนุนวิชาการ', icon: 'picture', ribbon: true }}/>
                 <br/>
                 <Gallery imgSrcs={ imgSrc2 }  mobile={ props.mobile }></Gallery>
             </Grid.Column>
             <Grid.Column width={7} textAlign='center'>
-                <Image centered size='medium' src={imgSrc3[0]} label={{ color: 'orange', content: 'อบรมบุคลากรสายสนับสนุน โครงการสร้างแรงบัลดาลใจในการทำงาน', icon: 'picture', ribbon: true }}/>
+                <Image centered size='big' src={imgSrc3[0]} label={{ color: 'orange', content: 'อบรมบุคลากรสายสนับสนุน โครงการสร้างแรงบัลดาลใจในการทำงาน', icon: 'picture', ribbon: true }}/>
                 <br/>
                 <Gallery imgSrcs={ imgSrc3 }  mobile={ props.mobile }></Gallery>
             </Grid.Column>

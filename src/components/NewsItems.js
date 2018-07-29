@@ -5,19 +5,13 @@ import img from '../assets/pics/images.png';
 import _ from 'lodash';
 
 const newsGroup = (props) => {
-    const description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer ";
-
-    const genearateNews = _.times(5, (idx) => {
-        return (
-            <News card={ false } key={ idx } date={ 5 + idx } month={ 7 } year={ 2018 } imgSrc={ img } title='Title' description={ description }/>
-        );
-    });
-
     return (
         <Grid.Row centered>
-          <Grid.Column width={ 10 }>
+          <Grid.Column width={ 7 }>
             <Item.Group>
-                { genearateNews }
+                <News title='การป้อนข้อมูลภาระงานสายวิชาการ' date='29' month='7' year='2561' icon='file' link='https://drive.google.com/open?id=1X5AK7829BW8-mydA7odqg0O7ggvj4LI1'></News>
+                <News title='ขอเชิญประชุมคณะกรรมการฝ่ายปริเมิณผู้บริหาร' date='29' month='7' year='2561' icon='file' link='https://drive.google.com/open?id=1MMnMOpOiH_Sb1L5cHOW3uicSbqDa_DVe'></News>
+                <News title='ประเมิณคุณภาพบุคลากรสายวิชาการ (PBP)' date='29' month='7' year='2561' icon='file' link='https://drive.google.com/open?id=1UtRu-T6IekfyT8WPoBbVq1MTobWyNxiV'></News>
             </Item.Group>
           </Grid.Column>
         </Grid.Row>
