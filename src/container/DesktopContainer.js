@@ -78,20 +78,20 @@ export default class DesktopContainer extends Component {
                           <Dropdown.Menu>
                             <Dropdown.Item as='a' >งานบริหารทรัพยากรบุคคล</Dropdown.Item>
                             <Dropdown.Item>งานบริหารสวัสดิการและสิทธิประโยชน์</Dropdown.Item>
-                            <Dropdown.Item>งานยุทธศาสตร์และพัฒนาระบบบริหารทรัพยากรบุคคล</Dropdown.Item>
+                            <Dropdown.Item>งานยุทธศาสตร์และพัฒนาระบบบริหาร<br/>ทรัพยากรบุคคล</Dropdown.Item>
                             <Dropdown simple item text='งานสร้างเศริมศักยาภาพและพัฒนาทรัพยากรบุคคล'>
                               <Dropdown.Menu>
-                                <Dropdown.Item as='a' >หลักสูตร/โครงสร้างการพัฒนาทรัพยากรบุคคล</Dropdown.Item>
+                                <Dropdown.Item as='a' >หลักสูตรโครงสร้างการพัฒนาทรัพยากร<br/>บุคคล</Dropdown.Item>
                                 <Dropdown.Item>การประเมินผลการปฏิบัติงาน</Dropdown.Item>
                                 <Dropdown.Item>ทุน</Dropdown.Item>
                               </Dropdown.Menu>
                               </Dropdown>
-                            <Dropdown.Item>งานความก้าวหน้าในสายงานวิชาการเเละสนับสนุน</Dropdown.Item>
+                            <Dropdown.Item>งานความก้าวหน้าในสายงานวิชาการเเละ<br/>สนับสนุน</Dropdown.Item>
                           </Dropdown.Menu>
                         </Dropdown>
                         <Dropdown simple item text='แผนยุทธศาสตร์การบริหารทรัพยากรบุคคล'>
                           <Dropdown.Menu>
-                            <Dropdown.Item as='a' >แผนยุทธศาสตร์การบริหารทรัพยากรบุคคล(PDF)</Dropdown.Item>
+                            <Dropdown.Item as='a' >แผนยุทธศาสตร์การบริหารทรัพยากรบุคคล<br/>(PDF)</Dropdown.Item>
                         </Dropdown.Menu>
                         </Dropdown>
                         <Dropdown.Item as='a' >ค่านิยองค์กร</Dropdown.Item>

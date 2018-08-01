@@ -7,7 +7,6 @@ import {
 import ResponsiveContainer from '../container/ResponsiveContainer';
 import MenuIcons from './MenuIcons';
 import NewsItems from './NewsItems';
-import NewsCard from './NewsCards';
 import Galleries from './Galleries';
 import Footer from './Footer';
 import FooterLogo from '../assets/pics/logo4_2.jpg';
@@ -23,7 +22,7 @@ const Home = () => (
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={ 8 }>
-            <Header as='h1' style={{ fontSize: '2em' }} icon='newspaper' content='News'/>
+            <Header className='animated infinite pulse' as='h1' style={{ fontSize: '2em' }} icon='newspaper' content='News'/>
           </Grid.Column>
         </Grid.Row>
         <NewsItems></NewsItems>
