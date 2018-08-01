@@ -78,8 +78,8 @@ export default class DesktopContainer extends Component {
                           <Dropdown.Menu>
                             <Dropdown.Item as='a' >งานบริหารทรัพยากรบุคคล</Dropdown.Item>
                             <Dropdown.Item>งานบริหารสวัสดิการและสิทธิประโยชน์</Dropdown.Item>
-                            <Dropdown.Item>งานยุทธศาสตร์และพัฒนาระบบบริหาร<br/>ทรัพยากรบุคคล</Dropdown.Item>
-                            <Dropdown simple item text='งานสร้างเศริมศักยาภาพและพัฒนาทรัพยากรบุคคล'>
+                            <Dropdown.Item>งานยุทธศาสตร์และพัฒนาระบบบริหารทรัพยากรบุคคล</Dropdown.Item>
+                            <Dropdown simple item text='งานสร้างเสริมศักยภาพและพัฒนาทรัพยากรบุคคล'>
                               <Dropdown.Menu>
                                 <Dropdown.Item as='a' >หลักสูตรโครงสร้างการพัฒนาทรัพยากร<br/>บุคคล</Dropdown.Item>
                                 <Dropdown.Item>การประเมินผลการปฏิบัติงาน</Dropdown.Item>
@@ -94,14 +94,14 @@ export default class DesktopContainer extends Component {
                             <Dropdown.Item as='a' >แผนยุทธศาสตร์การบริหารทรัพยากรบุคคล<br/>(PDF)</Dropdown.Item>
                         </Dropdown.Menu>
                         </Dropdown>
-                        <Dropdown.Item as='a' >ค่านิยองค์กร</Dropdown.Item>
+                        <Dropdown.Item as='a' >ค่านิยมองค์กร</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
                   </Menu.Menu>
                   <Menu.Menu position='right'>
                     <Dropdown simple item text='สารสนเทศบุคลากร'>
                       <Dropdown.Menu>
-                        <Dropdown.Item as='a' >รายงานข้อมูลสารสนเทศบุคลกร</Dropdown.Item>
+                        <Dropdown.Item as='a' >รายงานข้อมูลสารสนเทศบุคลากร</Dropdown.Item>
                         <Dropdown.Item as='a' >แผนภาพและข้อมูลแสดงการกระจายอายุของบุคลากร</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>

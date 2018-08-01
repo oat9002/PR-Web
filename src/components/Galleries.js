@@ -59,7 +59,7 @@ const galleries = (props) => {
                 <Gallery imgSrcs={ imgSrc2 }  mobile={ props.mobile }></Gallery>
             </Grid.Column>
             <Grid.Column width={7} textAlign='center'>
-                <Image centered size='big' src={imgSrc3[0]} label={{ color: 'orange', content: 'อบรมบุคลากรสายสนับสนุน โครงการสร้างแรงบัลดาลใจในการทำงาน', icon: 'picture', ribbon: true }}/>
+                <Image centered size='big' src={imgSrc3[0]} label={{ color: 'orange', content: 'อบรมบุคลากรสายสนับสนุน โครงการสร้างแรงบันดาลใจในการทำงาน', icon: 'picture', ribbon: true }}/>
                 <br/>
                 <Gallery imgSrcs={ imgSrc3 }  mobile={ props.mobile }></Gallery>
             </Grid.Column>
