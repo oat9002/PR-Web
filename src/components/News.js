@@ -1,5 +1,6 @@
 import React from 'react';
 import { Item, Icon, Card, Image } from 'semantic-ui-react';
+import newsSubscript from '../assets/pics/new_icon.gif'
 
 const news = (props) => {
   return props.card ? 
@@ -19,7 +20,16 @@ const news = (props) => {
       <Item as='a' href={ props.link }>
         <Icon size='big' name={ props.icon }></Icon>
         <Item.Content>
-          <Item.Header>{ props.title }</Item.Header>
+          <Item.Header>
+            { props.title }
+            {
+              props.isNew ? (
+                <sub><Image style={{ display: 'inline', marginLeft: '5px' }} src={ newsSubscript } width = "22" height = "9"/></sub>
+              ) : (
+                null
+              )
+            }
+          </Item.Header>
           <Item.Meta>{ props.date }/{ props.month }/{ props.year }</Item.Meta>
         </Item.Content>
       </Item>

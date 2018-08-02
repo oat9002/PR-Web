@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "animate.css": "^3.7.0",
     "element-react": "^1.4.20",
     "element-theme-default": "^1.4.13",
     "react": "^16.4.1",
