@@ -22,7 +22,7 @@ const Home = () => (
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={ 8 }>
-            <Header className='animated infinite pulse' as='h1' style={{ fontSize: '2em' }} icon='newspaper' content='News'/>
+            <Header as='h1' style={{ fontSize: '2em' }} icon='newspaper' content='News'/>
           </Grid.Column>
         </Grid.Row>
         <NewsItems></NewsItems>
