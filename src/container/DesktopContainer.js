@@ -73,28 +73,27 @@ export default class DesktopContainer extends Component {
                   <Menu.Menu position='right' >
                     <Dropdown simple item text='เกี่ยวกับเรา'>
                       <Dropdown.Menu>
-                        <Dropdown.Item as='a' >วิสัยทัศน์ พันธกิจ ภารกิจ</Dropdown.Item>
+                        <Dropdown.Item>วิสัยทัศน์ พันธกิจ ภารกิจ</Dropdown.Item>
                         <Dropdown simple item text='โครงสร้างกองทรัพยากรบุคคล'>
                           <Dropdown.Menu>
-                            <Dropdown.Item as='a' >งานบริหารทรัพยากรบุคคล</Dropdown.Item>
+                            <Dropdown.Item>งานบริหารทรัพยากรบุคคล</Dropdown.Item>
                             <Dropdown.Item>งานบริหารสวัสดิการและสิทธิประโยชน์</Dropdown.Item>
-                            <Dropdown.Item>งานยุทธศาสตร์และพัฒนาระบบบริหารทรัพยากรบุคคล</Dropdown.Item>
-                            <Dropdown simple item text='งานสร้างเสริมศักยภาพและพัฒนาทรัพยากรบุคคล'>
-                              <Dropdown.Menu>
-                                <Dropdown.Item as='a' >หลักสูตรโครงสร้างการพัฒนาทรัพยากร<br/>บุคคล</Dropdown.Item>
-                                <Dropdown.Item>การประเมินผลการปฏิบัติงาน</Dropdown.Item>
-                                <Dropdown.Item>ทุน</Dropdown.Item>
-                              </Dropdown.Menu>
-                              </Dropdown>
+                            <Dropdown.Item>งานยุทธศาสตร์และพัฒนาระบบบริหาร<br/>ทรัพยากรบุคคล</Dropdown.Item>
+                            <Dropdown.Divider></Dropdown.Divider>
+                            <Dropdown.Header>งานสร้างเสริมศักยภาพและพัฒนาทรัพยากรบุคคล</Dropdown.Header>
+                            <Dropdown.Item>หลักสูตรโครงสร้างการพัฒนาทรัพยากร<br/>บุคคล</Dropdown.Item>
+                            <Dropdown.Item>การประเมินผลการปฏิบัติงาน</Dropdown.Item>
+                            <Dropdown.Item>ทุน</Dropdown.Item>
+                            <Dropdown.Divider></Dropdown.Divider>
                             <Dropdown.Item>งานความก้าวหน้าในสายงานวิชาการเเละ<br/>สนับสนุน</Dropdown.Item>
                           </Dropdown.Menu>
                         </Dropdown>
-                        <Dropdown simple item text='แผนยุทธศาสตร์การบริหารทรัพยากรบุคคล'>
+                        <Dropdown item text='แผนยุทธศาสตร์การบริหารทรัพยากรบุคคล'>
                           <Dropdown.Menu>
-                            <Dropdown.Item as='a' >แผนยุทธศาสตร์การบริหารทรัพยากรบุคคล<br/>(PDF)</Dropdown.Item>
+                            <Dropdown.Item>แผนยุทธศาสตร์การบริหารทรัพยากรบุคคล<br/>(PDF)</Dropdown.Item>
                         </Dropdown.Menu>
                         </Dropdown>
-                        <Dropdown.Item as='a' >ค่านิยมองค์กร</Dropdown.Item>
+                        <Dropdown.Item>ค่านิยมองค์กร</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
                   </Menu.Menu>
