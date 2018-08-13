@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header } from 'semantic-ui-react';
-import ReponsiveContainer from '../container/ResponsiveContainer';
+import ReponsiveContainer from '../../../container/ResponsiveContainer';
 
 const feedback = (props) => {
     return (
