@@ -67,53 +67,53 @@ export default class DesktopContainer extends Component {
                   <Menu.Menu position='right' >
                     <Dropdown simple item text='เกี่ยวกับเรา'>
                       <Dropdown.Menu>
-                        <Dropdown.Item>วิสัยทัศน์ พันธกิจ ภารกิจ</Dropdown.Item>
+                        <Dropdown.Item as='a' href={ `${ Constants.rootUrl.aboutUs }/vision` }>วิสัยทัศน์ พันธกิจ ภารกิจ</Dropdown.Item>
                         <Dropdown simple item text='โครงสร้างกองทรัพยากรบุคคล'>
                           <Dropdown.Menu>
-                            <Dropdown.Item>งานบริหารทรัพยากรบุคคล</Dropdown.Item>
-                            <Dropdown.Item>งานบริหารสวัสดิการและสิทธิประโยชน์</Dropdown.Item>
-                            <Dropdown.Item>งานยุทธศาสตร์และพัฒนาระบบบริหาร<br/>ทรัพยากรบุคคล</Dropdown.Item>
+                            <Dropdown.Item as='a' href={ `${ Constants.rootUrl.aboutUs }/hrmanagement` }>งานบริหารทรัพยากรบุคคล</Dropdown.Item>
+                            <Dropdown.Item as='a' href={ `${ Constants.rootUrl.aboutUs }/welfaremanagement` }>งานบริหารสวัสดิการและสิทธิประโยชน์</Dropdown.Item>
+                            <Dropdown.Item as='a' href={ `${ Constants.rootUrl.aboutUs }/hrdevelopment` }>งานยุทธศาสตร์และพัฒนาระบบบริหาร<br/>ทรัพยากรบุคคล</Dropdown.Item>
                             <Dropdown.Divider></Dropdown.Divider>
                             <Dropdown.Header>งานสร้างเสริมศักยภาพและพัฒนาทรัพยากรบุคคล</Dropdown.Header>
-                            <Dropdown.Item>หลักสูตรโครงสร้างการพัฒนาทรัพยากร<br/>บุคคล</Dropdown.Item>
-                            <Dropdown.Item>การประเมินผลการปฏิบัติงาน</Dropdown.Item>
+                            <Dropdown.Item as='a' href={ `${ Constants.rootUrl.aboutUs }/hrcourse` }>หลักสูตรโครงสร้างการพัฒนาทรัพยากร<br/>บุคคล</Dropdown.Item>
+                            <Dropdown.Item as='a' href={ `${ Constants.rootUrl.aboutUs }/evaluation` }>การประเมินผลการปฏิบัติงาน</Dropdown.Item>
                             <Dropdown.Item as='a' href={ `${ Constants.rootUrl.aboutUs }/budget` }>ทุน</Dropdown.Item>
                             <Dropdown.Divider></Dropdown.Divider>
-                            <Dropdown.Item>งานความก้าวหน้าในสายงานวิชาการเเละ<br/>สนับสนุน</Dropdown.Item>
+                            <Dropdown.Item as='a' href={ `${ Constants.rootUrl.aboutUs }/progress` }>งานความก้าวหน้าในสายงานวิชาการเเละ<br/>สนับสนุน</Dropdown.Item>
                           </Dropdown.Menu>
                         </Dropdown>
                         <Dropdown item text='แผนยุทธศาสตร์การบริหารทรัพยากรบุคคล'>
                           <Dropdown.Menu>
-                            <Dropdown.Item>แผนยุทธศาสตร์การบริหารทรัพยากรบุคคล<br/>(PDF)</Dropdown.Item>
+                            <Dropdown.Item as='a' href={ `${ Constants.rootUrl.aboutUs }/hrplanning` }>แผนยุทธศาสตร์การบริหารทรัพยากรบุคคล<br/>(PDF)</Dropdown.Item>
                         </Dropdown.Menu>
                         </Dropdown>
-                        <Dropdown.Item>ค่านิยมองค์กร</Dropdown.Item>
+                        <Dropdown.Item as='a' href={ `${ Constants.rootUrl.aboutUs }/departmentvalue` }>ค่านิยมองค์กร</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
                   </Menu.Menu>
                   <Menu.Menu position='right'>
                     <Dropdown simple item text='สารสนเทศบุคลากร'>
                       <Dropdown.Menu>
-                        <Dropdown.Item as='a' >รายงานข้อมูลสารสนเทศบุคลากร</Dropdown.Item>
-                        <Dropdown.Item as='a' >แผนภาพและข้อมูลแสดงการกระจายอายุของบุคลากร</Dropdown.Item>
+                        <Dropdown.Item as='a' href={ `${ Constants.rootUrl.information }/report` } >รายงานข้อมูลสารสนเทศบุคลากร</Dropdown.Item>
+                        <Dropdown.Item as='a' href={ `${ Constants.rootUrl.information }/chart` } >แผนภาพและข้อมูลแสดงการกระจายอายุของบุคลากร</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
                   </Menu.Menu>
                   <Menu.Menu position='right'>
                     <Dropdown simple item text='พนักงานควรรู้'>
                       <Dropdown.Menu>
-                        <Dropdown.Item as='a' >คู่มือพนักงาน</Dropdown.Item>
-                        <Dropdown.Item as='a' >Infographic</Dropdown.Item>
+                        <Dropdown.Item as='a' href={ `${ Constants.rootUrl.employeeShouldKnow }/manual` }  >คู่มือพนักงาน</Dropdown.Item>
+                        <Dropdown.Item as='a' href={ `${ Constants.rootUrl.employeeShouldKnow }/infographic` } >Infographic</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
                   </Menu.Menu>
                   <Menu.Menu position='right'>
                     <Dropdown simple item text='ติดต่อเรา'>
                       <Dropdown.Menu>
-                        <Dropdown.Item as='a' >ติดต่อบุคลากรทรัพยากรบุคคล</Dropdown.Item>
-                        <Dropdown.Item as='a' >ส่งคำถาม/ข้อเสนอแนะ</Dropdown.Item>
-                        <Dropdown.Item as='a' >นักศึกษาติดต่อเข้าฝึกงาน/ผู้สนใจติดต่อเข้าศึกษาดูงานกองทรัพยากรบุคคล</Dropdown.Item>
-                        <Dropdown.Item as='a' >แผนที่-การเดินทาง</Dropdown.Item>
+                        <Dropdown.Item as='a' href={ `${ Constants.rootUrl.contactUs }/hremployee` } >ติดต่อบุคลากรทรัพยากรบุคคล</Dropdown.Item>
+                        <Dropdown.Item as='a'  href={ `${ Constants.rootUrl.contactUs }/feedback` } >ส่งคำถาม/ข้อเสนอแนะ</Dropdown.Item>
+                        <Dropdown.Item as='a'  href={ `${ Constants.rootUrl.contactUs }/observance` } >นักศึกษาติดต่อเข้าฝึกงาน/ผู้สนใจติดต่อเข้าศึกษาดูงานกองทรัพยากรบุคคล</Dropdown.Item>
+                        <Dropdown.Item as='a'  href={ `${ Constants.rootUrl.contactUs }/map` } >แผนที่-การเดินทาง</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
                   </Menu.Menu>
