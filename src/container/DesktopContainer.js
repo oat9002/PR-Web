@@ -14,17 +14,10 @@ import banner from '../assets/pics/HeaderBanner.jpg'
 export default class DesktopContainer extends Component {
     state = {
       fixed: false,
-      menuActived: '',
     }
   
     hideFixedMenu = () => this.setState({ fixed: false })
     showFixedMenu = () => this.setState({ fixed: true })
-
-    menuClickedHandler = (e, { name }) => {
-      this.setState({
-        menuActived: name
-      });
-    }
   
     render() {
       const { children } = this.props

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, Header, List } from 'semantic-ui-react';
+import { Header } from 'semantic-ui-react';
 import ReponsiveContainer from '../container/ResponsiveContainer';
 
 const shouldKnow = (props) => {
