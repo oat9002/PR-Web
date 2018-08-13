@@ -10,6 +10,7 @@ import {
   Dropdown
 } from 'semantic-ui-react'
 import banner from '../assets/pics/HeaderBanner.jpg'
+import Constants from '../Constants';
 
 export default class DesktopContainer extends Component {
     state = {
@@ -76,7 +77,7 @@ export default class DesktopContainer extends Component {
                             <Dropdown.Header>งานสร้างเสริมศักยภาพและพัฒนาทรัพยากรบุคคล</Dropdown.Header>
                             <Dropdown.Item>หลักสูตรโครงสร้างการพัฒนาทรัพยากร<br/>บุคคล</Dropdown.Item>
                             <Dropdown.Item>การประเมินผลการปฏิบัติงาน</Dropdown.Item>
-                            <Dropdown.Item>ทุน</Dropdown.Item>
+                            <Dropdown.Item as='a' href={ `${ Constants.rootUrl.aboutUs }/budget` }>ทุน</Dropdown.Item>
                             <Dropdown.Divider></Dropdown.Divider>
                             <Dropdown.Item>งานความก้าวหน้าในสายงานวิชาการเเละ<br/>สนับสนุน</Dropdown.Item>
                           </Dropdown.Menu>
