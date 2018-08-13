@@ -9,6 +9,8 @@ import {
   Segment,
   Sidebar,
 } from 'semantic-ui-react';
+import Constants from '../Constants';
+
 
 export default class MobileContainer extends Component {
     state = {}
