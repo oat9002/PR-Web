@@ -62,7 +62,7 @@ export default class DesktopContainer extends Component {
               >
                 <Container>
                   <Menu.Item name='title' active={ false } position='left'>
-                    <Image src = { banner }/> 
+                    <Image as='a' href='/' src = { banner }/> 
                   </Menu.Item>
                   <Menu.Menu position='right' >
                     <Dropdown simple item text='เกี่ยวกับเรา'>

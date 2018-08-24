@@ -108,7 +108,7 @@ export default class MobileContainer extends Component {
                     <Menu.Item onClick={this.handleToggle}>
                       <Icon name='sidebar' />
                     </Menu.Item>
-                    <Menu.Item name='title' active={ false } position='right'
+                    <Menu.Item as='a' href='/' name='title' active={ false } position='right'
                       style={{color: '#04004d'}}>
                         ฝ่ายทรัยากรบุคคล คณะการบริหารและจัดการ
                     </Menu.Item>
