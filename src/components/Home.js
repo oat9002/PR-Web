@@ -15,7 +15,7 @@ import HomeHeader from './Header';
 const Home = () => (
   <ResponsiveContainer>
     <HomeHeader/>
-    <Segment style={{ padding: '2em 0em' }} vertical>
+    <Segment style={{ padding: '5em 0em' }} vertical>
       <MenuIcons></MenuIcons>
     </Segment>
     <Segment style={{ padding: '4em 0em' }} vertical>

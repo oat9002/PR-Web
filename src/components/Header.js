@@ -16,7 +16,7 @@ class HomeHeader extends Component {
       <Container style={{ padding: '1em 0em' }}>
         <Grid container stackable verticalAlign='middle'>
           <Grid.Row centered>
-            <Grid.Column width={11}>
+            <Grid.Column width={15}>
               <Carousel 
                 height={ window.innerHeight > window.innerWidth ? mobileSize : desktopSize } 
                 indicatorPosition="outside"
