@@ -10,7 +10,9 @@ import img4 from '../assets/pics/header4.jpg';
 class HomeHeader extends Component {
   render() {
     const mobileSize = `${ Math.ceil(window.innerHeight * 0.4) }px`;
-    const desktopSize = `${ Math.ceil(window.innerHeight * 0.55) }px`;
+    const desktopSize = window.innerHeight > 800 ?
+        `${ Math.ceil(window.innerHeight * 0.55) }px` :
+        `${ Math.ceil(window.innerHeight * 0.8) }px`;
     
     return (
       <Container style={{ padding: '1em 0em' }}>
