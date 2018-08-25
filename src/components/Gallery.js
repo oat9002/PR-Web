@@ -20,9 +20,9 @@ class Gallery extends Component {
                         trigger='click'
                     >
                         { 
-                            this.props.imgSrcs.map((src, idx) => (
+                            Object.keys(this.props.imgSrcs).map((key, idx) => (
                                 <Carousel.Item key={ idx }>
-                                    <Image verticalAlign='middle' centered rounded key={ idx } src={ src }></Image>
+                                    <Image verticalAlign='middle' centered rounded key={ idx } src={ this.props.imgSrcs[key] }></Image>
                                 </Carousel.Item>
                             ))
                         }

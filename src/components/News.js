@@ -18,8 +18,8 @@ const news = (props) => {
     ) : 
     (
       <Item as='a' href={ props.link }>
-        <Icon size='big' name={ props.icon }></Icon>
-        <Item.Content>
+        { props.imgSrc != null ? <Item.Image size='small' src={ props.imgSrc }/> : <Icon size='big' name='file'></Icon> }
+        <Item.Content verticalAlign='middle'>
           <Item.Header>
             { props.title }
             {
