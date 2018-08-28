@@ -6,7 +6,7 @@ import {
 } from 'semantic-ui-react';
 import ResponsiveContainer from '../container/ResponsiveContainer';
 import MenuIcons from './MenuIcons';
-import NewsItems from './NewsItems';
+import NewsCards from './NewsCards';
 import Galleries from './Galleries';
 import Footer from './Footer';
 import FooterLogo from '../assets/pics/logo4_2.jpg';
@@ -25,7 +25,7 @@ const Home = () => (
             <Header as='h1' style={{ fontSize: '2em', color: '#00598b' }} icon='newspaper' content='News'/>
           </Grid.Column>
         </Grid.Row>
-        <NewsItems></NewsItems>
+        <NewsCards/>
       </Grid>
     </Segment>
     <Segment style={{ padding: '4em 0em' }} vertical>
