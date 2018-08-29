@@ -73,9 +73,7 @@ const newsGroup = (props) => {
                     date='29' 
                     month='7' 
                     year='2561' 
-                    link='https://drive.google.com/open?id=1X5AK7829BW8-mydA7odqg0O7ggvj4LI1' />
-               
-                
+                    link='https://drive.google.com/open?id=1X5AK7829BW8-mydA7odqg0O7ggvj4LI1' />      
             </Item.Group>
           </Grid.Column>
         </Grid.Row>
