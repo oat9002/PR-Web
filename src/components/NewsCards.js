@@ -50,7 +50,8 @@ const newsCards = (props) => {
                         title='ประกาศ หลักเกณฑ์ วิธีการ และเงื่อนไขการต่อเวลาราชการของข้าราชการพลเรือนในสถาบันอุดมศึกษา' 
                         date='1' 
                         month='8' 
-                        year='2561' 
+                        year='2561'
+                        imgSrc={ images['new04.jpg'] } 
                         link='https://drive.google.com/file/d/1O8kW-N-m2WFpK8UfZ9Z8gYYBDMzScqms/view?usp=sharing' 
                         isNew={ true }
                         card />
@@ -61,6 +62,7 @@ const newsCards = (props) => {
                         date='1'
                         month='8' 
                         year='2561' 
+                        imgSrc={ images['new05.jpg'] }
                         link='https://drive.google.com/open?id=1UtRu-T6IekfyT8WPoBbVq1MTobWyNxiV' 
                         isNew={ true }
                         card />
@@ -71,6 +73,7 @@ const newsCards = (props) => {
                         date='1'
                         month='8' 
                         year='2561' 
+                        imgSrc={ images['new06.jpg'] }
                         link='https://drive.google.com/file/d/1J-OY03WpoPlqQQO-viHKd5Yn1F7smIyv/view?usp=sharing' 
                         isNew={ true }
                         card />
@@ -83,6 +86,7 @@ const newsCards = (props) => {
                         date='29' 
                         month='7'
                         year='2561' 
+                        imgSrc={ images['new07.jpg'] }
                         link='https://drive.google.com/open?id=1UtRu-T6IekfyT8WPoBbVq1MTobWyNxiV'
                         card />
                 </Grid.Column>
@@ -92,6 +96,7 @@ const newsCards = (props) => {
                         date='29' 
                         month='7' 
                         year='2561' 
+                        imgSrc={ images['new08.jpg'] }
                         link='https://drive.google.com/open?id=1MMnMOpOiH_Sb1L5cHOW3uicSbqDa_DVe' 
                         card />
                 </Grid.Column>
@@ -101,6 +106,7 @@ const newsCards = (props) => {
                         date='29' 
                         month='7' 
                         year='2561' 
+                        imgSrc={ images['new09.jpg'] }
                         link='https://drive.google.com/open?id=1X5AK7829BW8-mydA7odqg0O7ggvj4LI1' 
                         card /> 
                 </Grid.Column>
