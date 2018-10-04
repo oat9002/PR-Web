@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "element-react": "^1.4.20",
+    "element-react": "^1.4.21",
     "element-theme-default": "^1.4.13",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
-    "semantic-ui-react": "^0.82.0"
+    "react-scripts": "2.0.4",
+    "semantic-ui-react": "^0.82.5"
   },
   "scripts": {
     "start": "react-scripts start",
