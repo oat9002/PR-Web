@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.033dcff4.css",
   "main.css.map": "static/css/main.033dcff4.css.map",
-  "main.js": "static/js/main.715fc041.js",
-  "main.js.map": "static/js/main.715fc041.js.map",
+  "main.js": "static/js/main.67968ee8.js",
+  "main.js.map": "static/js/main.67968ee8.js.map",
   "static/media/HeaderBanner.jpg": "static/media/HeaderBanner.1db7a302.jpg",
   "static/media/develop.png": "static/media/develop.a9ecb2a2.png",
   "static/media/element-icons.ttf?t=1472440741": "static/media/element-icons.b02bdc1b.ttf",
@@ -55,6 +55,12 @@
   "static/media/new01.jpg": "static/media/new01.1823f7da.jpg",
   "static/media/new02.jpg": "static/media/new02.722dfdf0.jpg",
   "static/media/new03.jpg": "static/media/new03.552127f0.jpg",
+  "static/media/new04.jpg": "static/media/new04.646494ae.jpg",
+  "static/media/new05.jpg": "static/media/new05.7a5967b0.jpg",
+  "static/media/new06.jpg": "static/media/new06.fbd4bff8.jpg",
+  "static/media/new07.jpg": "static/media/new07.5af34fa0.jpg",
+  "static/media/new08.jpg": "static/media/new08.a07b7ae6.jpg",
+  "static/media/new09.jpg": "static/media/new09.02d000d8.jpg",
   "static/media/register.png": "static/media/register.cce596ac.png",
   "static/media/welfare.png": "static/media/welfare.889f3577.png"
 }
