@@ -12,6 +12,17 @@ const newsCards = (props) => {
             <Grid.Row centered>
 <Grid.Column width={ newsWidth }>
                     <News 
+                        title='ประกาศรายชื่อผู้มีสิทธิ์สอบสัมภาษณ์พนักงานสถาบันประเภทสายสนับสนุนวิชาการ' 
+                        date='23' 
+                        month='1' 
+                        year='2562' 
+                        imgSrc={ images['new02.jpg'] }
+                        link='http://hr.kmitl.ac.th/wp-content/uploads/2019/01/%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B8%82%E0%B8%B6%E0%B9%89%E0%B8%99%E0%B8%9A%E0%B8%B1%E0%B8%8D%E0%B8%8A%E0%B8%B5%E0%B8%9B%E0%B8%B5%E0%B8%87%E0%B8%9B%E0%B8%A1.62.pdf' 
+                        isNew={ true }
+                        card />
+                </Grid.Column>
+<Grid.Column width={ newsWidth }>
+                    <News 
                         title='กองทุนสำรองเลี้ยงชีพ' 
                         date='23' 
                         month='1' 
