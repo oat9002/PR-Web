@@ -1,0 +1,11 @@
+﻿<Grid.Column width={ newsWidth }>
+                    <News 
+                        title='ประกาศ การบริหารงานบุคคลพนักงานสถาบันประเภทพิเศษ' 
+                        date='1' 
+                        month='8' 
+                        year='2561' 
+                        imgSrc={ images['new02.jpg'] }
+                        link='https://drive.google.com/file/d/1MnRQFuUvuDXS8l9DOjLiY9tT8Llja9t5/view?usp=sharing' 
+                        isNew={ true }
+                        card />
+                </Grid.Column>
